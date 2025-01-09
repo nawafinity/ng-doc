@@ -40,6 +40,9 @@ import { distinctUntilChanged, map, startWith } from 'rxjs/operators';
     NgDocIconComponent,
     AsyncPipe,
   ],
+  host: {
+    class: 'relative',
+  },
 })
 @UntilDestroy()
 export class NgDocNavbarComponent {

@@ -1,14 +1,30 @@
-<div class="navbar-container">
-  <div class="ng-doc-navbar-left">
-    <ng-content select="[ngDocNavbarLeft]"></ng-content>
-  </div>
-  <div class="ng-doc-navbar-right">
-    @if (search) {
-      <ng-doc-search></ng-doc-search>
-    }
-    <ng-content select="[ngDocNavbarRight]"></ng-content>
-    <button class="ng-doc-menu" ng-doc-button-icon size="large" (click)="sidebarService.toggle()">
-      <ng-doc-icon icon="menu" [size]="24"></ng-doc-icon>
-    </button>
+<div
+  class="navbar-container absolute w-full h-full backdrop-blur flex-none transition-colors duration-500 border-b border-gray-500/5 dark:border-gray-300/[0.06] supports-backdrop-blur:bg-background-light/60 dark:bg-transparent">
+  <div class="max-w-8xl mx-auto relative">
+    <div class="relative">
+      <div class="flex items-center lg:px-12 h-16 min-w-0 mx-4 lg:mx-0">
+        <div
+          class="h-full relative flex-1 flex items-center gap-x-4 min-w-0 border-b border-gray-500/5 dark:border-gray-300/[0.06]">
+          <div class="flex-1 flex items-center gap-x-4">
+            <ng-content select="[ngDocNavbarLeft]"></ng-content>
+          </div>
+          <div class="flex-1">
+            @if (search) {
+              <ng-doc-search></ng-doc-search>
+            }
+          </div>
+          <div class="flex-1 relative hidden lg:flex items-center ml-auto justify-end space-x-4">
+            <ng-content select="[ngDocNavbarRight]"></ng-content>
+            <button
+              class="ng-doc-menu"
+              ng-doc-button-icon
+              size="large"
+              (click)="sidebarService.toggle()">
+              <ng-doc-icon icon="menu" [size]="24"></ng-doc-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
