@@ -51,7 +51,6 @@ const NgDocConfig: SjlConfiguration = {
   },
   i18n: {
     locales: ['ar', 'en'],
-    locale: 'ar',
   },
 };
 
