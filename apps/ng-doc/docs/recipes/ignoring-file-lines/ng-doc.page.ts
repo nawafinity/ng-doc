@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import RecipesCategory from '../ng-doc.category';
 
-const IgnoringFileLinesPage: NgDocPage = {
+const IgnoringFileLinesPage: SjlPage = {
   title: `Ignoring file lines`,
   mdFile: './index.md',
   category: RecipesCategory,

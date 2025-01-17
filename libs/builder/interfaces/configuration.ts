@@ -1,12 +1,12 @@
-import { NgDocHeading, NgDocKeywordsLoader } from '@ng-doc/core';
-import { NgDocGlobalKeyword } from '@ng-doc/core/interfaces/keyword-map';
+import { NgDocHeading, NgDocKeywordsLoader, SjlI18nConfig } from '@sijil/core';
+import { NgDocGlobalKeyword } from '@sijil/core/interfaces/keyword-map';
 
 import { NgDocRepoConfig } from './repo-config';
 
 /**
  * NgDoc configuration interface, that configure NgDoc library
  */
-export interface NgDocConfiguration {
+export interface SjlConfiguration {
   /**
    * Determines whether to use the cache or not. (enabled by default)
    */
@@ -20,7 +20,7 @@ export interface NgDocConfiguration {
    * The path to the output directory, where the documentation will be generated. (e.g. 'src')
    *
    * Remember that if you change this path, you also need to change the following:
-   * - Change the path to the `@ng-doc/generated` directory in `tsconfig.json`
+   * - Change the path to the `@sijil/generated` directory in `tsconfig.json`
    * - Change the path to the `ng-doc/app-name/assets` folder in `angular.json`
    */
   outDir?: string;
@@ -55,6 +55,8 @@ export interface NgDocConfiguration {
       dark: string;
     };
   };
+
+  i18n?: SjlI18nConfig;
 }
 
 /**

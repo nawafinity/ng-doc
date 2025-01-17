@@ -7,7 +7,7 @@ import {
   Input,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgDocDecodeUriComponentPipe } from '@ng-doc/app/pipes/decode-uri-component';
+import { NgDocDecodeUriComponentPipe } from '@sijil/app/pipes/decode-uri-component';
 
 @Component({
   selector: 'li[ng-doc-toc-element]',

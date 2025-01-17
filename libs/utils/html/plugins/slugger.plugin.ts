@@ -1,4 +1,4 @@
-import { NgDocHeading, NgDocPageAnchor, NgDocScopedKeyword } from '@ng-doc/core';
+import { NgDocHeading, NgDocPageAnchor, NgDocScopedKeyword } from '@sijil/core';
 import GithubSlugger from 'github-slugger';
 import { Element, Root } from 'hast';
 import { hasProperty } from 'hast-util-has-property';

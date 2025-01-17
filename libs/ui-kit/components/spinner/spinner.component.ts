@@ -1,15 +1,15 @@
 import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
-import { NgDocSize } from '@ng-doc/ui-kit/types';
+import { NgDocSize } from '@sijil/ui-kit/types';
 
 @Component({
-	selector: 'ng-doc-spinner',
-	templateUrl: './spinner.component.html',
-	styleUrls: ['./spinner.component.scss'],
-	changeDetection: ChangeDetectionStrategy.OnPush,
-	standalone: true,
+  selector: 'ng-doc-spinner',
+  templateUrl: './spinner.component.html',
+  styleUrls: ['./spinner.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
 })
 export class NgDocSpinnerComponent {
-	@Input()
-	@HostBinding('attr.data-ng-doc-size')
-	size: NgDocSize = 'medium';
+  @Input()
+  @HostBinding('attr.data-ng-doc-size')
+  size: NgDocSize = 'medium';
 }

@@ -5,7 +5,7 @@ import { SchematicArgv } from '../schematic-argv';
  * the generator can be called by the command below
  *
  * ```bash
- * ng g @ng-doc/builder:api
+ * ng g @sijil/builder:api
  * ```
  *
  */

@@ -1,1 +1,1 @@
-export * from '@ng-doc/ui-kit/cdk/combobox-host';
+export * from '@sijil/ui-kit/cdk/combobox-host';

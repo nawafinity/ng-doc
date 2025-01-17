@@ -13,17 +13,17 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { FormControl, FormGroup, FormsModule } from '@angular/forms';
-import { isPlaygroundProperty } from '@ng-doc/app/helpers';
-import { NgDocProvidedTypeControl } from '@ng-doc/app/interfaces';
-import { getTokenForType } from '@ng-doc/app/providers/type-control';
-import { extractValueOrThrow } from '@ng-doc/core/helpers/extract-value';
-import { isPresent } from '@ng-doc/core/helpers/is-present';
-import { objectKeys } from '@ng-doc/core/helpers/object-keys';
+import { isPlaygroundProperty } from '@sijil/app/helpers';
+import { NgDocProvidedTypeControl } from '@sijil/app/interfaces';
+import { getTokenForType } from '@sijil/app/providers/type-control';
+import { extractValueOrThrow } from '@sijil/core/helpers/extract-value';
+import { isPresent } from '@sijil/core/helpers/is-present';
+import { objectKeys } from '@sijil/core/helpers/object-keys';
 import {
   NgDocPlaygroundContent,
   NgDocPlaygroundProperties,
   NgDocPlaygroundProperty,
-} from '@ng-doc/core/interfaces';
+} from '@sijil/core/interfaces';
 import {
   NgDocBindPipe,
   NgDocButtonComponent,
@@ -33,7 +33,7 @@ import {
   NgDocTextComponent,
   NgDocTextRightDirective,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 

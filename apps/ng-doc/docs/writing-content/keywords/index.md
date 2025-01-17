@@ -70,7 +70,7 @@ to create such links you can use global keywords that can be declared in the con
 you can read about it in the `*GettingStartedConfiguration` article.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   keywords: {

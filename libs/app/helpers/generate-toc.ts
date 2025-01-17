@@ -1,6 +1,6 @@
-import { NgDocTocItem } from '@ng-doc/app/interfaces';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { NgDocHeading } from '@ng-doc/core/types';
+import { NgDocTocItem } from '@sijil/app/interfaces';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { NgDocHeading } from '@sijil/core/types';
 
 /**
  * Generate table of contents, only for headings with id

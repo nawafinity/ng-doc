@@ -15,11 +15,11 @@ import {
   StaticProvider,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { NgDocOverlayRef } from '@ng-doc/ui-kit/classes';
-import { NgDocOverlayConfig, NgDocOverlayContainer } from '@ng-doc/ui-kit/interfaces';
-import { NgDocContent, NgDocOverlayOrigin, NgDocOverlayPosition } from '@ng-doc/ui-kit/types';
-import { NgDocOverlayUtils } from '@ng-doc/ui-kit/utils';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { NgDocOverlayRef } from '@sijil/ui-kit/classes';
+import { NgDocOverlayConfig, NgDocOverlayContainer } from '@sijil/ui-kit/interfaces';
+import { NgDocContent, NgDocOverlayOrigin, NgDocOverlayPosition } from '@sijil/ui-kit/types';
+import { NgDocOverlayUtils } from '@sijil/ui-kit/utils';
 import { PolymorpheusComponent } from '@tinkoff/ng-polymorpheus';
 import { take } from 'rxjs/operators';
 

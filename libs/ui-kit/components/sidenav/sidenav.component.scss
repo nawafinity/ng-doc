@@ -1,6 +1,7 @@
 @import '../../styles/mixins';
 
 :host {
+  @apply block h-screen;
   width: 100%;
 
   &[data-ng-doc-sidebar='false'] {

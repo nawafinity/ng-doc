@@ -1,4 +1,4 @@
-import { InputType } from '@ng-doc/core';
+import { InputType } from '@sijil/core';
 
 export interface NgDocProcessorOptions<T, K extends keyof T = keyof T> {
   content?: Node[][];

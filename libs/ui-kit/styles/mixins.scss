@@ -1,7 +1,7 @@
 @import 'colors';
 
 @mixin ng-doc-font() {
-  font-family: var(--ng-doc-font-family);
+  font-family: var(--sjl-font-family);
   font-variant: no-contextual;
   color: var(--ng-doc-text);
   line-height: var(--ng-doc-line-height);

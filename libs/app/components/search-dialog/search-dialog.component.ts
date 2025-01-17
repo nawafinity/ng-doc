@@ -9,8 +9,8 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { NgDocSearchResult } from '@ng-doc/app/interfaces';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
+import { NgDocSearchResult } from '@sijil/app/interfaces';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
 import {
   NG_DOC_DIALOG_DATA,
   NgDocAutofocusDirective,
@@ -29,8 +29,8 @@ import {
   NgDocTextComponent,
   popupAnimation,
   StatedObservable,
-} from '@ng-doc/ui-kit';
-import { NgDocListHost, NgDocOverlayRef } from '@ng-doc/ui-kit/classes';
+} from '@sijil/ui-kit';
+import { NgDocListHost, NgDocOverlayRef } from '@sijil/ui-kit/classes';
 
 export interface NgDocSearchDialogData {
   term: string;

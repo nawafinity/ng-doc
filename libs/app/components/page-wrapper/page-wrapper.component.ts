@@ -16,17 +16,17 @@ import {
   RouterOutlet,
   Routes,
 } from '@angular/router';
-import { NgDocPageHeaderComponent } from '@ng-doc/app/components/page-header';
-import { createComponent } from '@ng-doc/app/helpers';
-import { NgDocNavigation, NgDocPageNavigation } from '@ng-doc/app/interfaces';
-import { NG_DOC_CONTEXT, NG_DOC_PAGE_SKELETON } from '@ng-doc/app/tokens';
-import { isPresent } from '@ng-doc/core/helpers/is-present';
-import { NgDocPageType } from '@ng-doc/core/types';
+import { NgDocPageHeaderComponent } from '@sijil/app/components/page-header';
+import { createComponent } from '@sijil/app/helpers';
+import { NgDocNavigation, NgDocPageNavigation } from '@sijil/app/interfaces';
+import { NG_DOC_CONTEXT, NG_DOC_PAGE_SKELETON } from '@sijil/app/tokens';
+import { isPresent } from '@sijil/core/helpers/is-present';
+import { NgDocPageType } from '@sijil/core/types';
 import {
   NgDocIconComponent,
   NgDocTabRouteComponent,
   NgDocTabRoutesGroupComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-page-wrapper',

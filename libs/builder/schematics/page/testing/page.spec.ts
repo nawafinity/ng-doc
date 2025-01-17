@@ -28,7 +28,7 @@ describe('page', () => {
 
     expect(tree.exists('test/my-page/index.md')).toBe(true);
     expect(tree.readText('test/my-page/ng-doc.page.ts'))
-      .toBe(`import {NgDocPage} from '@ng-doc/core';
+      .toBe(`import {NgDocPage} from '@sijil/core';
 
 const MyPagePage: NgDocPage = {
 \ttitle: \`My Page\`,
@@ -52,7 +52,7 @@ export default MyPagePage;
 
     expect(tree.exists('test/my-page/index.md')).toBe(true);
     expect(tree.readText('test/my-page/ng-doc.page.ts'))
-      .toBe(`import {NgDocPage} from '@ng-doc/core';
+      .toBe(`import {NgDocPage} from '@sijil/core';
 
 const MyPagePage: NgDocPage = {
 \ttitle: \`my-page\`,
@@ -77,7 +77,7 @@ export default MyPagePage;
 
     expect(tree.exists('test/my-page/index.md')).toBe(true);
     expect(tree.readText('test/my-page/ng-doc.page.ts'))
-      .toBe(`import {NgDocPage} from '@ng-doc/core';
+      .toBe(`import {NgDocPage} from '@sijil/core';
 
 const MyPagePage: NgDocPage = {
 \ttitle: \`my-page\`,
@@ -102,7 +102,7 @@ export default MyPagePage;
 
     expect(tree.exists('test/my-page/index.md')).toBe(true);
     expect(tree.readText('test/my-page/ng-doc.page.ts'))
-      .toBe(`import {NgDocPage} from '@ng-doc/core';
+      .toBe(`import {NgDocPage} from '@sijil/core';
 
 const MyPagePage: NgDocPage = {
 \ttitle: \`my-page\`,
@@ -122,7 +122,7 @@ It's time to write some awesome docs!
   it('should generate page entity with category', async () => {
     createSourceFile(
       'test/parent-category/ng-doc.category.ts',
-      `import {NgDocCategory} from '@ng-doc/core';
+      `import {NgDocCategory} from '@sijil/core';
 
 const ParentCategory: NgDocCategory = {
 \ttitle: 'parent-category',
@@ -145,7 +145,7 @@ export default ParentCategory;
 
     expect(tree.exists('test/parent-category/my-page/index.md')).toBe(true);
     expect(tree.readText('test/parent-category/my-page/ng-doc.page.ts'))
-      .toBe(`import {NgDocPage} from '@ng-doc/core';
+      .toBe(`import {NgDocPage} from '@sijil/core';
 import ParentCategory from '../ng-doc.category';
 
 const MyPagePage: NgDocPage = {
@@ -198,7 +198,7 @@ export default MyPagePage;
     );
 
     expect(tree.exists('test/page/index.md')).toBe(true);
-    expect(tree.readText('test/page/ng-doc.page.ts')).toBe(`import {NgDocPage} from '@ng-doc/core';
+    expect(tree.readText('test/page/ng-doc.page.ts')).toBe(`import {NgDocPage} from '@sijil/core';
 
 const page: NgDocPage = {
 \ttitle: \`Пейжд\`,

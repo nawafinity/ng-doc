@@ -1,5 +1,5 @@
-import { NgDocHeading, NgDocPageAnchor } from '@ng-doc/core';
 import rehypeShiki from '@shikijs/rehype';
+import { NgDocHeading, NgDocPageAnchor } from '@sijil/core';
 import rehypeMinifyWhitespace from 'rehype-minify-whitespace';
 import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';

@@ -1,9 +1,9 @@
-import { NgDocAngularEntities, NgDocDeclarations, NgDocPage } from '@ng-doc/core';
+import { NgDocAngularEntities, NgDocDeclarations, SjlPage } from '@sijil/core';
 
 import { ButtonDemoComponent } from './button-demo/button-demo.component';
 import { DevelopDemoComponent } from './develop-demo/develop-demo.component';
 
-const DevelopPage: NgDocPage = {
+const DevelopPage: SjlPage = {
   title: 'Develop',
   mdFile: './index.md.nunj',
   onlyForTags: ['development'],

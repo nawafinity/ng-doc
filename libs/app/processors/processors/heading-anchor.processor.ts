@@ -1,5 +1,5 @@
-import { NgDocHeadingAnchorComponent } from '@ng-doc/app/components/heading-anchor';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
+import { NgDocHeadingAnchorComponent } from '@sijil/app/components/heading-anchor';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
 
 export const headingAnchorProcessor: NgDocPageProcessor<NgDocHeadingAnchorComponent> = {
   component: NgDocHeadingAnchorComponent,

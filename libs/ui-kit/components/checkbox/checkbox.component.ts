@@ -1,9 +1,9 @@
 import { NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostBinding, inject, Input } from '@angular/core';
-import { NgDocIconComponent } from '@ng-doc/ui-kit/components/icon';
-import { NgDocCheckedChangeDirective } from '@ng-doc/ui-kit/directives/checked-change';
-import { NgDocFocusableDirective } from '@ng-doc/ui-kit/directives/focusable';
-import { NgDocColor } from '@ng-doc/ui-kit/types';
+import { NgDocIconComponent } from '@sijil/ui-kit/components/icon';
+import { NgDocCheckedChangeDirective } from '@sijil/ui-kit/directives/checked-change';
+import { NgDocFocusableDirective } from '@sijil/ui-kit/directives/focusable';
+import { NgDocColor } from '@sijil/ui-kit/types';
 import { DICompareHost, DIStateControl, injectHostControl } from 'di-controls';
 
 @Component({

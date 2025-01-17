@@ -1,4 +1,4 @@
-import { asArray } from '@ng-doc/core';
+import { asArray } from '@sijil/core';
 import { combineLatest, from, map, ObservableInputTuple, of, switchMap } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 

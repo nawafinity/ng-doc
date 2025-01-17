@@ -6,16 +6,16 @@ import {
   Input,
   TemplateRef,
 } from '@angular/core';
-import { NgDocComboboxHostComponent } from '@ng-doc/ui-kit/cdk/combobox-host';
-import { NgDocListHost } from '@ng-doc/ui-kit/classes/list-host';
-import { NgDocClearControlComponent } from '@ng-doc/ui-kit/components/clear-control';
-import { NgDocDropdownComponent } from '@ng-doc/ui-kit/components/dropdown';
-import { NgDocInputWrapperComponent } from '@ng-doc/ui-kit/components/input-wrapper';
-import { NgDocDataDirective } from '@ng-doc/ui-kit/directives/data';
-import { NgDocFocusCatcherDirective } from '@ng-doc/ui-kit/directives/focus-catcher';
-import { NgDocInputStringDirective } from '@ng-doc/ui-kit/directives/input-string';
-import { NgDocContextWithImplicit } from '@ng-doc/ui-kit/interfaces';
-import { NgDocContent } from '@ng-doc/ui-kit/types';
+import { NgDocComboboxHostComponent } from '@sijil/ui-kit/cdk/combobox-host';
+import { NgDocListHost } from '@sijil/ui-kit/classes/list-host';
+import { NgDocClearControlComponent } from '@sijil/ui-kit/components/clear-control';
+import { NgDocDropdownComponent } from '@sijil/ui-kit/components/dropdown';
+import { NgDocInputWrapperComponent } from '@sijil/ui-kit/components/input-wrapper';
+import { NgDocDataDirective } from '@sijil/ui-kit/directives/data';
+import { NgDocFocusCatcherDirective } from '@sijil/ui-kit/directives/focus-catcher';
+import { NgDocInputStringDirective } from '@sijil/ui-kit/directives/input-string';
+import { NgDocContextWithImplicit } from '@sijil/ui-kit/interfaces';
+import { NgDocContent } from '@sijil/ui-kit/types';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import { DIControl, provideHostControl } from 'di-controls';
 

@@ -8,5 +8,5 @@ export * from './image.processor';
 export * from './mermaid.processor';
 export * from './playground.processor';
 export * from './tabs.processor';
-export * from '@ng-doc/app/processors/processors/link';
-export * from '@ng-doc/app/processors/processors/tooltip';
+export * from '@sijil/app/processors/processors/link';
+export * from '@sijil/app/processors/processors/tooltip';

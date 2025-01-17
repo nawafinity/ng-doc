@@ -1,4 +1,4 @@
-import { NgDocPlaygroundProperties } from '@ng-doc/core';
+import { NgDocPlaygroundProperties } from '@sijil/core';
 import {
   ClassDeclaration,
   Node,

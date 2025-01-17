@@ -1,5 +1,5 @@
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
-import { NgDocBlockquoteComponent, NgDocBlockquoteType } from '@ng-doc/ui-kit';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
+import { NgDocBlockquoteComponent, NgDocBlockquoteType } from '@sijil/ui-kit';
 
 export const blockquoteProcessor: NgDocPageProcessor<NgDocBlockquoteComponent> = {
   component: NgDocBlockquoteComponent,

@@ -1,4 +1,5 @@
 export * from './context';
+export * from './i18n';
 export * from './mermaid';
 export * from './page-processor';
 export * from './page-skeleton';

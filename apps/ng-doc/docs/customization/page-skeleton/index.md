@@ -5,7 +5,7 @@ The default page skeleton is defined in the `main.ts` file of the application:
 
 ```ts name="main.ts" {6}
 import { bootstrapApplication } from '@angular/platform-browser';
-import { NG_DOC_DEFAULT_PAGE_SKELETON, providePageSkeleton } from '@ng-doc/app';
+import { NG_DOC_DEFAULT_PAGE_SKELETON, providePageSkeleton } from '@sijil/app';
 import { AppComponent } from './app/app.component';
 
 bootstrapApplication(AppComponent, {
@@ -22,7 +22,7 @@ interface:
 
 ```ts name="breadcrumb.component.ts" group="breadcrumbs"
 import { Component, Input, NgFor } from '@angular/core';
-import { NgDocPageBreadcrumbs } from '@ng-doc/app';
+import { NgDocPageBreadcrumbs } from '@sijil/app';
 
 @Component({
   selector: 'my-breadcrumbs',
@@ -54,7 +54,7 @@ using `providePageSkeleton` function:
 
 ```ts name="main.ts" {8}
 import { bootstrapApplication } from '@angular/platform-browser';
-import { NgDocPageNavigationComponent, NgDocTocComponent, providePageSkeleton } from '@ng-doc/app';
+import { NgDocPageNavigationComponent, NgDocTocComponent, providePageSkeleton } from '@sijil/app';
 import { AppComponent } from './app/app.component';
 
 bootstrapApplication(AppComponent, {

@@ -1,4 +1,4 @@
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
 import {
   blockquoteProcessor,
   codeProcessor,
@@ -12,7 +12,7 @@ import {
   playgroundProcessor,
   tabsProcessor,
   tooltipProcessor,
-} from '@ng-doc/app/processors/processors';
+} from '@sijil/app/processors/processors';
 
 export const NG_DOC_DEFAULT_PAGE_PROCESSORS: NgDocPageProcessor[] = [
   /**

@@ -12,7 +12,7 @@ If you prefer standalone components then you don't need to do anything special,
 just create a component and register it in the `demos` field of the page.
 
 ```angular-ts name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 import { MyModule } from '../my.module';
 import { ButtonDemoComponent } from '../demos/button-demo/button-demo.component';
 
@@ -30,7 +30,7 @@ a module that will declare this component and import it into the page module
 and register it in the `demos` field of the page.
 
 ```typescript name="ng-doc.page.ts" {6}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 import { ButtonDemoModule } from '../demos/button-demo/button-demo.module';
 import { ButtonDemoComponent } from '../demos/button-demo/button-demo.component';
 

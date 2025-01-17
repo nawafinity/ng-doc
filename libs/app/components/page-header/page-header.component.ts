@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
-import { NgDocPageProcessorComponent } from '@ng-doc/app/processors';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
+import { NgDocPageProcessorComponent } from '@sijil/app/processors';
 
 @Component({
   selector: 'ng-doc-page-header',

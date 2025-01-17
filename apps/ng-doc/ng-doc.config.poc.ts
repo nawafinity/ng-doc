@@ -1,7 +1,7 @@
-import { NgDocConfiguration } from '@ng-doc/builder';
-import { ngKeywordsLoader } from '@ng-doc/keywords-loaders';
+import { SjlConfiguration } from '@sijil/builder';
+import { ngKeywordsLoader } from '@sijil/keywords-loaders';
 
-const NgDocConfig: NgDocConfiguration = {
+const NgDocConfig: SjlConfiguration = {
   docsPath: 'apps/ng-doc/poc',
   routePrefix: 'docs',
   tsConfig: 'apps/ng-doc/tsconfig.app.json',

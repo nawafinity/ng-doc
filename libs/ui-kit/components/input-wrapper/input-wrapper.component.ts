@@ -10,16 +10,16 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
-import { NgDocBaseInput } from '@ng-doc/ui-kit/classes/base-input';
-import { NgDocInputHost } from '@ng-doc/ui-kit/classes/input-host';
-import { NgDocFloatedBorderComponent } from '@ng-doc/ui-kit/components/floated-border';
-import { NgDocFloatedContentComponent } from '@ng-doc/ui-kit/components/floated-content';
-import { NgDocWrapperComponent } from '@ng-doc/ui-kit/components/wrapper';
-import { ngDocMakePure } from '@ng-doc/ui-kit/decorators';
-import { NgDocFocusCatcherDirective } from '@ng-doc/ui-kit/directives/focus-catcher';
-import { NgDocContextWithImplicit } from '@ng-doc/ui-kit/interfaces';
-import { NgDocContent, NgDocTextAlign } from '@ng-doc/ui-kit/types';
 import { UntilDestroy } from '@ngneat/until-destroy';
+import { NgDocBaseInput } from '@sijil/ui-kit/classes/base-input';
+import { NgDocInputHost } from '@sijil/ui-kit/classes/input-host';
+import { NgDocFloatedBorderComponent } from '@sijil/ui-kit/components/floated-border';
+import { NgDocFloatedContentComponent } from '@sijil/ui-kit/components/floated-content';
+import { NgDocWrapperComponent } from '@sijil/ui-kit/components/wrapper';
+import { ngDocMakePure } from '@sijil/ui-kit/decorators';
+import { NgDocFocusCatcherDirective } from '@sijil/ui-kit/directives/focus-catcher';
+import { NgDocContextWithImplicit } from '@sijil/ui-kit/interfaces';
+import { NgDocContent, NgDocTextAlign } from '@sijil/ui-kit/types';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 
 @Component({

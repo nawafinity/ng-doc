@@ -18,7 +18,7 @@ API integration is done by providing a special `NgDocKeywordsLoader` to the
 To use loaders below you need to install them:
 
 ```bash
-npm i @ng-doc/keywords-loaders --save-dev
+npm i @sijil/keywords-loaders --save-dev
 ```
 
 ### Integrating with the Angular documentation
@@ -32,8 +32,8 @@ To integrate your documentation with the Angular documentation, you need to open
 your `ng-doc.config.ts` file, and import `ngKeywordsLoader` to the `keywordsLoaders` array:
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
-import { ngKeywordsLoader } from '@ng-doc/keywords-loaders';
+import { NgDocConfiguration } from '@sijil/builder';
+import { ngKeywordsLoader } from '@sijil/keywords-loaders';
 
 const config: NgDocConfiguration = {
   keywords: {
@@ -59,8 +59,8 @@ To integrate your documentation with the RxJS documentation, you need to open
 your `ng-doc.config.ts` file, and import `rxjsKeywordsLoader` to the `keywordsLoaders` array:
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
-import { rxjsKeywordsLoader } from '@ng-doc/keywords-loaders';
+import { NgDocConfiguration } from '@sijil/builder';
+import { rxjsKeywordsLoader } from '@sijil/keywords-loaders';
 
 const config: NgDocConfiguration = {
   keywords: {
@@ -87,8 +87,8 @@ your `ng-doc.config.ts` file, and import `ngDocKeywordsLoader` to the `keywordsL
 and provide the base config:
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
-import { ngDocKeywordsLoader } from '@ng-doc/keywords-loaders';
+import { NgDocConfiguration } from '@sijil/builder';
+import { ngDocKeywordsLoader } from '@sijil/keywords-loaders';
 
 const config: NgDocConfiguration = {
   keywords: {
@@ -112,8 +112,8 @@ You can also integrate guides of the third-party documentation, and provide a pr
 you want not to conflict with your own guides keywords:
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
-import { ngDocKeywordsLoader } from '@ng-doc/keywords-loaders';
+import { NgDocConfiguration } from '@sijil/builder';
+import { ngDocKeywordsLoader } from '@sijil/keywords-loaders';
 
 const config: NgDocConfiguration = {
   keywords: {
@@ -145,7 +145,7 @@ To create your own keywords loader, you need to create a function that returns a
 keywords.
 
 ```typescript
-import { NgDocKeywordsLoader } from '@ng-doc/core';
+import { NgDocKeywordsLoader } from '@sijil/core';
 
 export function myKeywordsLoader(): NgDocKeywordsLoader {
   return async () => {
@@ -163,7 +163,7 @@ After that, you need to add the loader to the `keywordsLoaders` array in the
 `ng-doc.config.ts` file:
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 import { myKeywordsLoader } from './my-keywords-loader';
 
 const config: NgDocConfiguration = {

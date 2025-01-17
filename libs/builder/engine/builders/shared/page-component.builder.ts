@@ -1,4 +1,4 @@
-import { NgDocPageType, uid } from '@ng-doc/core';
+import { NgDocPageType, uid } from '@sijil/core';
 import path from 'path';
 import { finalize } from 'rxjs';
 

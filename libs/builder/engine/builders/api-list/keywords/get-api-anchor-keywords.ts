@@ -1,5 +1,5 @@
-import { DeclarationEntry, EntryMetadata, getScopedKeyword } from '@ng-doc/builder';
-import { NgDocKeyword, NgDocPageAnchor } from '@ng-doc/core';
+import { DeclarationEntry, EntryMetadata, getScopedKeyword } from '@sijil/builder';
+import { NgDocKeyword, NgDocPageAnchor } from '@sijil/core';
 
 import { constructPageKeyword, formatKeywordKey } from '../../../../helpers';
 

@@ -1,10 +1,10 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import WritingContentCategory from '../ng-doc.category';
 import { ButtonDemoComponent } from './demos/button-demo/button-demo.component';
 import { ButtonInlineDemoComponent } from './demos/button-inline-demo/button-inline-demo.component';
 
-const DemoAndDemoPanePage: NgDocPage = {
+const DemoAndDemoPanePage: SjlPage = {
   title: 'Demo and Demo Pane',
   mdFile: ['./index.md', './demo.md', './demo-pane.md', './snippets.md'],
   category: WritingContentCategory,

@@ -8,15 +8,15 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { NgDocRootPage } from '@ng-doc/app/classes/root-page';
-import { isSameObject } from '@ng-doc/core/helpers/is-same-object';
-import { objectKeys } from '@ng-doc/core/helpers/object-keys';
+import { NgDocRootPage } from '@sijil/app/classes/root-page';
+import { isSameObject } from '@sijil/core/helpers/is-same-object';
+import { objectKeys } from '@sijil/core/helpers/object-keys';
 import {
   NgDocPlaygroundConfig,
   NgDocPlaygroundOptions,
   NgDocPlaygroundProperties,
-} from '@ng-doc/core/interfaces';
-import { NgDocAsArrayPipe } from '@ng-doc/ui-kit';
+} from '@sijil/core/interfaces';
+import { NgDocAsArrayPipe } from '@sijil/ui-kit';
 
 import { NgDocPlaygroundDemoComponent } from './playground-demo/playground-demo.component';
 import { NgDocPlaygroundForm } from './playground-form';

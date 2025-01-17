@@ -9,10 +9,10 @@ import {
   OnDestroy,
   ViewChild,
 } from '@angular/core';
-import { NgDocTheme } from '@ng-doc/app';
-import { NgDocThemeService } from '@ng-doc/app/services/theme';
-import { ngDocZoneDetach } from '@ng-doc/ui-kit';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocTheme } from '@sijil/app';
+import { NgDocThemeService } from '@sijil/app/services/theme';
+import { ngDocZoneDetach } from '@sijil/ui-kit';
 import { fromEvent } from 'rxjs';
 import { debounceTime, startWith } from 'rxjs/operators';
 

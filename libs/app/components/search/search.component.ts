@@ -1,37 +1,25 @@
-import { AsyncPipe, NgFor, NgIf, NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
-import { NgDocSearchEngine } from '@ng-doc/app/classes';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocSearchEngine } from '@sijil/app/classes';
 import {
   NgDocSearchDialogComponent,
   NgDocSearchDialogData,
-} from '@ng-doc/app/components/search-dialog';
-import { NgDocSearchResult } from '@ng-doc/app/interfaces';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
+} from '@sijil/app/components/search-dialog';
+import { NgDocSearchResult } from '@sijil/app/interfaces';
 import {
-  NgDocAutofocusDirective,
   NgDocButtonIconComponent,
   NgDocComponentContent,
-  NgDocDataListComponent,
   NgDocDialogService,
-  NgDocDropdownComponent,
   NgDocDropdownOriginDirective,
-  NgDocExecutePipe,
-  NgDocFocusCatcherDirective,
-  NgDocHighlighterPipe,
   NgDocHotkeyDirective,
   NgDocIconComponent,
   NgDocInputStringDirective,
   NgDocInputWrapperComponent,
-  NgDocLetDirective,
-  NgDocSpinnerComponent,
   NgDocTagComponent,
-  NgDocTextComponent,
   observableState,
   StatedObservable,
-} from '@ng-doc/ui-kit';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit';
 import { BehaviorSubject, NEVER } from 'rxjs';
 import { shareReplay, skip, switchMap } from 'rxjs/operators';
 
@@ -41,29 +29,14 @@ import { shareReplay, skip, switchMap } from 'rxjs/operators';
   styleUrls: ['./search.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
-    NgDocLetDirective,
-    NgIf,
     NgDocButtonIconComponent,
     NgDocDropdownOriginDirective,
     NgDocIconComponent,
-    NgDocDropdownComponent,
     NgDocInputWrapperComponent,
     NgDocInputStringDirective,
     FormsModule,
-    NgDocAutofocusDirective,
-    NgTemplateOutlet,
-    NgDocFocusCatcherDirective,
     NgDocHotkeyDirective,
     NgDocTagComponent,
-    NgDocDataListComponent,
-    RouterLink,
-    NgDocTextComponent,
-    NgFor,
-    NgDocSpinnerComponent,
-    AsyncPipe,
-    NgDocHighlighterPipe,
-    NgDocExecutePipe,
-    NgDocSanitizeHtmlPipe,
   ],
 })
 @UntilDestroy()

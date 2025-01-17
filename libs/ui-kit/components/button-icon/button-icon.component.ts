@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
-import { NgDocSize } from '@ng-doc/ui-kit/types';
+import { NgDocSize } from '@sijil/ui-kit/types';
 
 @Component({
   selector:

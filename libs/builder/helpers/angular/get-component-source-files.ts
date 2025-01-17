@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { asArray } from '@ng-doc/core';
+import { asArray } from '@sijil/core';
 import path from 'path';
 import { ClassDeclaration } from 'ts-morph';
 

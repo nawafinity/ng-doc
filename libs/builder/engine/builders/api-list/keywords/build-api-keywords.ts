@@ -1,4 +1,4 @@
-import { NgDocKeyword, NgDocPageAnchor } from '@ng-doc/core';
+import { NgDocKeyword, NgDocPageAnchor } from '@sijil/core';
 
 import { formatKeywordKey } from '../../../../helpers';
 import { DeclarationEntry, EntryMetadata } from '../../interfaces';

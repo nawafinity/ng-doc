@@ -1,8 +1,8 @@
 // @ts-nocheck
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {Routes} from '@angular/router';
-import {NgDocPageWrapperComponent} from '@ng-doc/app';
-import {NgDocPageType} from '@ng-doc/core';
+import {NgDocPageWrapperComponent} from '@sijil/app';
+import {NgDocPageType} from '@sijil/core';
 
 const headerContent: string = `{{ headerContent | toTemplateString }}`
 

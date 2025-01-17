@@ -1,18 +1,10 @@
 import { Location } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostBinding, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import {
-  NgDocNavbarComponent,
-  NgDocSidebarComponent,
-  NgDocThemeToggleComponent,
-} from '@ng-doc/app';
-import { NgDocRootComponent } from '@ng-doc/app/components/root';
-import {
-  NgDocButtonIconComponent,
-  NgDocIconComponent,
-  NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
-import { preventInitialChildAnimations } from '@ng-doc/ui-kit/animations';
+import { NgDocNavbarComponent, NgDocSidebarComponent, NgDocThemeToggleComponent } from '@sijil/app';
+import { NgDocRootComponent } from '@sijil/app/components/root';
+import { NgDocButtonIconComponent, NgDocIconComponent, NgDocTooltipDirective } from '@sijil/ui-kit';
+import { preventInitialChildAnimations } from '@sijil/ui-kit/animations';
 
 @Component({
   animations: [preventInitialChildAnimations],

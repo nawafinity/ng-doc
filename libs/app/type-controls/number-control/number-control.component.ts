@@ -1,14 +1,14 @@
 import { NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgDocTypeControl } from '@ng-doc/app/interfaces';
+import { NgDocTypeControl } from '@sijil/app/interfaces';
 import {
   NgDocButtonIconComponent,
   NgDocFocusableDirective,
   NgDocIconComponent,
   NgDocInputNumberDirective,
   NgDocInputWrapperComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 import { DIControl, DIControlSilencerDirective } from 'di-controls';
 
 @Component({

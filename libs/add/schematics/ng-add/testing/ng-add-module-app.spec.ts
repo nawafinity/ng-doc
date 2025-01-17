@@ -41,10 +41,10 @@ describe('ng-add module app', () => {
       `{
   "dependencies": {
     "@angular/core": "~13.0.0",
-    "@ng-doc/app": "${NG_DOC_VERSION}",
-    "@ng-doc/builder": "${NG_DOC_VERSION}",
-    "@ng-doc/core": "${NG_DOC_VERSION}",
-    "@ng-doc/ui-kit": "${NG_DOC_VERSION}"
+    "@sijil/app": "${NG_DOC_VERSION}",
+    "@sijil/builder": "${NG_DOC_VERSION}",
+    "@sijil/core": "${NG_DOC_VERSION}",
+    "@sijil/ui-kit": "${NG_DOC_VERSION}"
   }
 }`,
     );
@@ -87,10 +87,10 @@ describe('ng-add module app', () => {
     expect(tree.readContent('tsconfig.json')).toEqual(`{
   "compilerOptions": {
     "paths": {
-      "@ng-doc/generated": [
+      "@sijil/generated": [
         "./ng-doc/demo/index.ts"
       ],
-      "@ng-doc/generated/*": [
+      "@sijil/generated/*": [
         "./ng-doc/demo/*"
       ]
     }
@@ -120,8 +120,8 @@ describe('ng-add module app', () => {
 
     expect(tree.readContent('test/app/app.module.ts'))
       .toEqual(`import { provideHttpClient, withInterceptorsFromDi, withFetch } from "@angular/common/http";
-import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent, provideNgDocApp, provideSearchEngine, NgDocDefaultSearchEngine, providePageSkeleton, NG_DOC_DEFAULT_PAGE_SKELETON, provideMainPageProcessor, NG_DOC_DEFAULT_PAGE_PROCESSORS } from "@ng-doc/app";
-import { NG_DOC_ROUTING, provideNgDocContext } from "@ng-doc/generated";
+import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent, provideNgDocApp, provideSearchEngine, NgDocDefaultSearchEngine, providePageSkeleton, NG_DOC_DEFAULT_PAGE_SKELETON, provideMainPageProcessor, NG_DOC_DEFAULT_PAGE_PROCESSORS } from "@sijil/app";
+import { NG_DOC_ROUTING, provideNgDocContext } from "@sijil/generated";
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
@@ -156,17 +156,17 @@ export class AppModule {}
               "main": "test/main.ts",
               "tsConfig": "test/tsconfig.app.json",
               "styles": [
-                "node_modules/@ng-doc/app/styles/global.css"
+                "node_modules/@sijil/app/styles/global.css"
               ],
               "assets": [
                 {
                   "glob": "**/*",
-                  "input": "node_modules/@ng-doc/app/assets",
+                  "input": "node_modules/@sijil/app/assets",
                   "output": "assets/ng-doc/app"
                 },
                 {
                   "glob": "**/*",
-                  "input": "node_modules/@ng-doc/ui-kit/assets",
+                  "input": "node_modules/@sijil/ui-kit/assets",
                   "output": "assets/ng-doc/ui-kit"
                 },
                 {
@@ -176,7 +176,7 @@ export class AppModule {}
                 }
               ],
               "allowedCommonJsDependencies": [
-                "@ng-doc/core"
+                "@sijil/core"
               ],
              },
              "configurations": {
@@ -187,7 +187,7 @@ export class AppModule {}
 \t\t\t\t\t"aot": true
               \t}
               },
-              "builder": "@ng-doc/builder:application"
+              "builder": "@sijil/builder:application"
           }
         }
     }

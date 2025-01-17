@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgDocTab } from '@ng-doc/app/interfaces';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
+import { NgDocTab } from '@sijil/app/interfaces';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
 import {
   NgDocBindPipe,
   NgDocExecutePipe,
   NgDocIconComponent,
   NgDocTabComponent,
   NgDocTabGroupComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-tabs',

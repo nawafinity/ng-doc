@@ -1,6 +1,6 @@
-import { NgDocPlaygroundComponent } from '@ng-doc/app/components/playground';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
-import { isPresent } from '@ng-doc/core/helpers/is-present';
+import { NgDocPlaygroundComponent } from '@sijil/app/components/playground';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
+import { isPresent } from '@sijil/core/helpers/is-present';
 
 export const playgroundProcessor: NgDocPageProcessor<NgDocPlaygroundComponent> = {
   component: NgDocPlaygroundComponent,

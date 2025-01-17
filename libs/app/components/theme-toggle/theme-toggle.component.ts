@@ -1,12 +1,12 @@
 import { DOCUMENT, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { NgDocThemeService } from '@ng-doc/app/services/theme';
+import { NgDocThemeService } from '@sijil/app/services/theme';
 import {
   NgDocButtonIconComponent,
   NgDocIconComponent,
   NgDocSmoothResizeComponent,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 interface ToggleTheme {
   name: string;

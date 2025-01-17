@@ -1,18 +1,18 @@
 import { NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, Input } from '@angular/core';
-import { NgDocCopyButtonComponent } from '@ng-doc/app/components/copy-button';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
-import { NgDocPageProcessorComponent } from '@ng-doc/app/processors/page-processor';
-import { linkProcessor } from '@ng-doc/app/processors/processors/link';
-import { tooltipProcessor } from '@ng-doc/app/processors/processors/tooltip';
-import { provideMainPageProcessor } from '@ng-doc/app/tokens';
+import { NgDocCopyButtonComponent } from '@sijil/app/components/copy-button';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
+import { NgDocPageProcessorComponent } from '@sijil/app/processors/page-processor';
+import { linkProcessor } from '@sijil/app/processors/processors/link';
+import { tooltipProcessor } from '@sijil/app/processors/processors/tooltip';
+import { provideMainPageProcessor } from '@sijil/app/tokens';
 import {
   NgDocButtonIconComponent,
   NgDocIconComponent,
   NgDocSmoothResizeComponent,
   NgDocTextComponent,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-code',

@@ -16,10 +16,10 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { SafeHtml } from '@angular/platform-browser';
-import { NgDocPageProcessor, NgDocProcessorOptions } from '@ng-doc/app/interfaces';
-import { NG_DOC_PAGE_CUSTOM_PROCESSOR, NG_DOC_PAGE_PROCESSOR } from '@ng-doc/app/tokens';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { objectKeys } from '@ng-doc/core/helpers/object-keys';
+import { NgDocPageProcessor, NgDocProcessorOptions } from '@sijil/app/interfaces';
+import { NG_DOC_PAGE_CUSTOM_PROCESSOR, NG_DOC_PAGE_PROCESSOR } from '@sijil/app/tokens';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { objectKeys } from '@sijil/core/helpers/object-keys';
 
 /**
  * Base processor class to create a processor directive that will be used to replace

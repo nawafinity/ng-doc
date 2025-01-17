@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import { DemoComponent } from './demo.component';
 
-const Page: NgDocPage = {
+const Page: SjlPage = {
   title: `Page`,
   mdFile: './index.md',
   demos: { DemoComponent },

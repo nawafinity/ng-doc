@@ -1,4 +1,4 @@
-import { escapeHtml, NgDocDemoActionOptions } from '@ng-doc/core';
+import { escapeHtml, NgDocDemoActionOptions } from '@sijil/core';
 
 import { NgDocAction } from '../../../types';
 

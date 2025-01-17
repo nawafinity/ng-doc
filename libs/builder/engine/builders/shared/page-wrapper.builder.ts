@@ -4,8 +4,8 @@ import {
   IndexStore,
   keywordsStore,
   NgDocBuilderContext,
-} from '@ng-doc/builder';
-import { NgDocPageType, uid } from '@ng-doc/core';
+} from '@sijil/builder';
+import { NgDocPageType, uid } from '@sijil/core';
 import { finalize } from 'rxjs';
 
 import { UTILS } from '../../../helpers';

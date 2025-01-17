@@ -1,5 +1,5 @@
 // @ts-nocheck
-import {NgDocDemoAssets} from '@ng-doc/app';
+import {NgDocDemoAssets} from '@sijil/app';
 
 export const demoAssets: NgDocDemoAssets = {
 {%- for demoName, assets in demoAssets %}

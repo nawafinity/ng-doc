@@ -1,18 +1,20 @@
+import { DOCUMENT } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
   HostBinding,
+  Inject,
   inject,
   Input,
   numberAttribute,
   OnChanges,
   OnInit,
 } from '@angular/core';
-import { NgDocCacheInterceptor } from '@ng-doc/ui-kit/interceptors';
-import { NG_DOC_ASSETS_PATH, NG_DOC_CUSTOM_ICONS_PATH } from '@ng-doc/ui-kit/tokens';
-import { NgDocIconSize } from '@ng-doc/ui-kit/types';
+import { NgDocCacheInterceptor } from '@sijil/ui-kit/interceptors';
+import { NG_DOC_ASSETS_PATH, NG_DOC_CUSTOM_ICONS_PATH } from '@sijil/ui-kit/tokens';
+import { NgDocIconSize } from '@sijil/ui-kit/types';
 import { of, Subject } from 'rxjs';
 import { catchError, startWith, switchMap } from 'rxjs/operators';
 
@@ -28,6 +30,9 @@ export class NgDocIconComponent implements OnChanges, OnInit {
   @Input()
   @HostBinding('attr.data-ng-doc-icon')
   icon: string = '';
+
+  @Input()
+  sprite: boolean = false;
 
   /** Custom icon name, if not set, `icon` will be used */
   @Input()
@@ -47,6 +52,7 @@ export class NgDocIconComponent implements OnChanges, OnInit {
   constructor(
     private readonly elementRef: ElementRef<HTMLElement>,
     private readonly httpClient: HttpClient,
+    @Inject(DOCUMENT) private document: Document,
   ) {}
 
   ngOnChanges(): void {
@@ -54,30 +60,44 @@ export class NgDocIconComponent implements OnChanges, OnInit {
   }
 
   ngOnInit(): void {
-    this.reload$
-      .pipe(
-        startWith(null),
-        switchMap(() =>
-          this.httpClient
-            .get(this.href, {
-              responseType: 'text',
-              params: { [NgDocCacheInterceptor.TOKEN]: 'true' },
-            })
-            .pipe(
-              catchError((e: Error) => {
-                console.error(e);
+    if (!this.sprite) {
+      this.reload$
+        .pipe(
+          startWith(null),
+          switchMap(() =>
+            this.httpClient
+              .get(this.href, {
+                responseType: 'text',
+                params: { [NgDocCacheInterceptor.TOKEN]: 'true' },
+              })
+              .pipe(
+                catchError((e: Error) => {
+                  console.error(e);
 
-                return of('');
-              }),
-            ),
-        ),
-      )
-      .subscribe((svg: string) => (this.elementRef.nativeElement.innerHTML = svg));
+                  return of('');
+                }),
+              ),
+          ),
+        )
+        .subscribe((svg: string) => (this.elementRef.nativeElement.innerHTML = svg));
+    } else {
+      const svg = this.getSprite(this.icon);
+      this.elementRef.nativeElement.innerHTML = svg;
+    }
   }
 
   get href(): string {
     return this.customIcon
       ? `${this.customIconsPath}/${this.customIcon}.svg#${this.customIcon}`
       : `${this.assetsPath}/icons/${this.size}/${this.icon}.svg#${this.icon}`;
+  }
+
+  private getSprite(icon: string) {
+    const svg = this.document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    const use = this.document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    const path = `${this.assetsPath}/icons/sprite.svg`;
+    use.setAttribute('href', `${path}#${icon}`);
+    svg.appendChild(use);
+    return svg.outerHTML;
   }
 }

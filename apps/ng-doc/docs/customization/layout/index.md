@@ -95,7 +95,7 @@ component and call the `toggle()` method.
 
 ```typescript name="my-custom-navbar.component.ts"
 import { Component } from '@angular/core';
-import { NgDocSidebarService } from '@ng-doc/app';
+import { NgDocSidebarService } from '@sijil/app';
 
 @Component({
   selector: 'my-custom-navbar',
@@ -158,7 +158,7 @@ object.
 
 ```typescript name="my-custom-sidebar.component.ts"
 import { Component, Inject } from '@angular/core';
-import { NG_DOC_CONTEXT, NgDocContext } from '@ng-doc/app';
+import { NG_DOC_CONTEXT, NgDocContext } from '@sijil/app';
 
 @Component({
   selector: 'my-custom-sidebar',

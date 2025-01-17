@@ -6,7 +6,7 @@ import {
   inject,
   Input,
 } from '@angular/core';
-import { BaseElement, NgDocHorizontalAlign } from '@ng-doc/ui-kit/types';
+import { BaseElement, NgDocHorizontalAlign } from '@sijil/ui-kit/types';
 
 @Component({
   selector: '[ng-doc-floated-content]',

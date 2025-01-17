@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import GettingStartedCategory from '../ng-doc.category';
 
-const page: NgDocPage = {
+const page: SjlPage = {
   title: `SSR`,
   mdFile: './index.md',
   category: GettingStartedCategory,

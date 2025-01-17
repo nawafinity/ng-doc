@@ -3,7 +3,7 @@
 To open a demo in fullscreen mode, you need to specify route in `ng-doc.page.ts`
 
 ```typescript name="ng-doc.page.ts" {8-13}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 import { ButtonDemoComponent } from './button-demo.component';
 
 const MyAwesomePage: NgDocPage = {

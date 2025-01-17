@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { NgDocTheme } from '@ng-doc/app/interfaces';
+import { NgDocTheme } from '@sijil/app/interfaces';
 
 /**
  * Token that can be used to provide custom theme.
@@ -21,7 +21,7 @@ import { NgDocTheme } from '@ng-doc/app/interfaces';
  * ```
  */
 export const NG_DOC_THEME: InjectionToken<NgDocTheme> = new InjectionToken<NgDocTheme>(
-	`NG_DOC_THEME`,
+  `NG_DOC_THEME`,
 );
 
 /**
@@ -30,5 +30,5 @@ export const NG_DOC_THEME: InjectionToken<NgDocTheme> = new InjectionToken<NgDoc
  * You can provide this token in the root of you application, to set theme by default.
  */
 export const NG_DOC_DEFAULT_THEME_ID: InjectionToken<string> = new InjectionToken<string>(
-	`NG_DOC_DEFAULT_THEME`,
+  `NG_DOC_DEFAULT_THEME`,
 );

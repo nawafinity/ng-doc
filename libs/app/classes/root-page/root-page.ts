@@ -1,6 +1,6 @@
-import { NgDocDemoAssets } from '@ng-doc/app/interfaces';
-import { NgDocPage } from '@ng-doc/core/interfaces';
-import { NgDocPageType } from '@ng-doc/core/types';
+import { NgDocDemoAssets } from '@sijil/app/interfaces';
+import { SjlPage } from '@sijil/core/interfaces';
+import { NgDocPageType } from '@sijil/core/types';
 
 /**
  * Base class for NgDoc page
@@ -28,7 +28,7 @@ export abstract class NgDocRootPage {
   /**
    * The page dependencies file
    */
-  readonly page?: NgDocPage;
+  readonly page?: SjlPage;
 
   /**
    * The page demo assets that have code examples of the demo components

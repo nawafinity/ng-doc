@@ -11,7 +11,7 @@ exported by default and match `NgDocConfiguration` interface.
 > documentation application.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   // ...
@@ -34,7 +34,7 @@ file instead of searching for `ng-doc.config.ts` file.
     "my-project": {
       "architect": {
         "serve": {
-          "builder": "@ng-doc/builder:dev-server",
+          "builder": "@sijil/builder:dev-server",
           "configurations": {
             "development": {
               "ngDoc": {
@@ -53,7 +53,7 @@ file instead of searching for `ng-doc.config.ts` file.
 {
   "targets": {
     "serve": {
-      "executor": "@ng-doc/builder:dev-server",
+      "executor": "@sijil/builder:dev-server",
       "configurations": {
         "development": {
           "ngDoc": {
@@ -75,7 +75,7 @@ in your `ng-doc.config.ts` file.
 After that NgDoc will search for documentation pages in the specified folder and its subfolders.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   docsPath: 'libs/my-lib/src',
@@ -93,7 +93,7 @@ the header by providing a custom template in the `ng-doc.config.ts` file.
 > The template must be HTML file. It supports `nunjucks` but not `markdown`.
 
 ```ts name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   guide: {
@@ -120,7 +120,7 @@ You can also change the output folder for the documentation application by speci
 this folder is used for storing generated pages and other NgDoc files.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   outDir: 'src',
@@ -133,7 +133,7 @@ After that NgDoc will generated and store everything inside `src/ng-doc/app-name
 But remember that you should not commit this folder to your repository, and also update
 the following things:
 
-- Update the path to the `@ng-doc/generated` directory in `tsconfig.json` paths section.
+- Update the path to the `@sijil/generated` directory in `tsconfig.json` paths section.
 - Update the path to the `ng-doc/app-name/assets` folder in `angular.json`np
 
 ## Configuring repository
@@ -150,7 +150,7 @@ After that, NgDoc will start displaying links for editing and viewing the source
 > creating an issue in our `ngDocFeatureRequest` page.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   repoConfig: {
@@ -166,7 +166,7 @@ export default config;
 Using the `platform` property, you can specify the platform on which the repository is located, by default it is `github`.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   repoConfig: {
@@ -259,7 +259,7 @@ NgDoc generates links automatically, and doesn't know what route the parent page
 need to specify the `routePrefix` property in `ng-doc.config.ts` file.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   routePrefix: 'docs',

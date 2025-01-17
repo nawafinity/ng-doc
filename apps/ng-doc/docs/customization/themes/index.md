@@ -35,10 +35,10 @@ for backgrounds, borders etc.
 ## Dark mode
 
 NgDoc has a dark mode theme that you can enable by importing the `dark.css` file from the
-`@ng-doc/app` package.
+`@sijil/app` package.
 
 ```scss name="styles.scss"
-@import '@ng-doc/app/styles/themes/dark.css';
+@import '@sijil/app/styles/themes/dark.css';
 ```
 
 ## Auto theme
@@ -79,7 +79,7 @@ First, you need to provide the themes in the `ng-doc.config.ts` file to make the
 the builder.
 
 ```typescript name="ng-doc.config.ts"
-import { NgDocConfiguration } from '@ng-doc/builder';
+import { NgDocConfiguration } from '@sijil/builder';
 
 const config: NgDocConfiguration = {
   shiki: {
@@ -95,7 +95,7 @@ And as a last step, you need to import and configure them on the client side in 
 
 ```typescript name="main.ts"
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideNgDocApp } from '@ng-doc/app';
+import { provideNgDocApp } from '@sijil/app';
 
 import { AppComponent } from './app/app.component';
 

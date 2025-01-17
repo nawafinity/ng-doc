@@ -6,8 +6,8 @@
     "styleIncludePaths": ["./styles"]
   },
   "allowedNonPeerDependencies": [
-    "@ng-doc/core",
-    "@ng-doc/ui-kit",
+    "@sijil/core",
+    "@sijil/ui-kit",
     "@orama/plugin-match-highlight",
     "@orama/stemmers",
     "mermaid"

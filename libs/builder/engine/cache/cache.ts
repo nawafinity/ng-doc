@@ -1,4 +1,4 @@
-import { asArray, Constructor, isPresent } from '@ng-doc/core';
+import { asArray, Constructor, isPresent } from '@sijil/core';
 
 import { createCache, isCacheValid, updateCache } from './helpers';
 import { NgDocCacheAccessor, NgDocCachedData, NgDocCachedType } from './interfaces';

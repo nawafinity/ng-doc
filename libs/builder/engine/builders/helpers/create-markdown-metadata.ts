@@ -1,4 +1,4 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 import path from 'path';
 
 import { EntryMetadata, MarkdownEntry } from '../interfaces';
@@ -10,7 +10,7 @@ import { markdownFrontMatter } from './markdown-front-matter';
  * @param mdFile
  */
 export function createMarkdownMetadata(
-  parent: EntryMetadata<NgDocPage>,
+  parent: EntryMetadata<SjlPage>,
   mdFile: string,
 ): EntryMetadata<MarkdownEntry> {
   const mdPath = path.join(parent.dir, mdFile);

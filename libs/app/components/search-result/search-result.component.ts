@@ -1,9 +1,9 @@
 import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgDocKindIconComponent } from '@ng-doc/app/components/kind-icon';
-import { NgDocPageInfo } from '@ng-doc/core/interfaces';
-import { NgDocTextComponent, NgDocTooltipDirective } from '@ng-doc/ui-kit';
+import { NgDocKindIconComponent } from '@sijil/app/components/kind-icon';
+import { NgDocPageInfo } from '@sijil/core/interfaces';
+import { NgDocTextComponent, NgDocTooltipDirective } from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-search-result',

@@ -7,8 +7,8 @@ import {
   PAGE_NAME,
   renderTemplate,
   runBuild,
-} from '@ng-doc/builder';
-import { NgDocPage } from '@ng-doc/core';
+} from '@sijil/builder';
+import { SjlPage } from '@sijil/core';
 import * as path from 'path';
 import { of } from 'rxjs';
 
@@ -17,7 +17,7 @@ import { Builder, FileOutput, watchFile } from '../../core';
 import { EntryMetadata } from '../interfaces';
 
 interface Config {
-  page: EntryMetadata<NgDocPage>;
+  page: EntryMetadata<SjlPage>;
 }
 
 export const PAGE_PLAYGROUND_BUILDER_TAG = 'PagePlayground';

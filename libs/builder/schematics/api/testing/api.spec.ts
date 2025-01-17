@@ -19,7 +19,7 @@ describe('api', () => {
   it('should generate api entity', async () => {
     const tree: UnitTestTree = await runner.runSchematic('api', { path: 'test' }, host);
 
-    expect(tree.readText('test/ng-doc.api.ts')).toBe(`import {NgDocApi} from '@ng-doc/core';
+    expect(tree.readText('test/ng-doc.api.ts')).toBe(`import {NgDocApi} from '@sijil/core';
 
 const Api: NgDocApi = {
 \ttitle: 'API References',

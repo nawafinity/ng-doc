@@ -7,7 +7,7 @@ import * as path from 'path';
 export function getCacheDirPath(): string {
   return path.join(
     findCacheDir({
-      name: 'ng-doc',
+      name: '.sijil',
       create: true,
     }) ?? '.cache',
   );

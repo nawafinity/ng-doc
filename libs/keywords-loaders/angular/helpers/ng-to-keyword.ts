@@ -1,4 +1,4 @@
-import { NgDocGlobalKeyword } from '@ng-doc/core';
+import { NgDocGlobalKeyword } from '@sijil/core';
 
 import { NgPage } from '../interfaces';
 import { NgVersion } from '../types';

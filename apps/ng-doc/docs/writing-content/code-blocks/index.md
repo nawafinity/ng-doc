@@ -103,7 +103,7 @@ You can also highlight multiple lines, or lines ranges:
 
 ````markdown name="index.md"
 ```typescript {1,3-5,8}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 const NicePage: NgDocPage = {
   title: `What a nice page!`,
@@ -115,7 +115,7 @@ export default NicePage;
 ````
 
 ```typescript {1,3-6,8}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 const NicePage: NgDocPage = {
   title: `What a nice page!`,

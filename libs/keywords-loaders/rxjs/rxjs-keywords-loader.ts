@@ -1,4 +1,4 @@
-import { NgDocKeywordsLoader } from '@ng-doc/core';
+import { NgDocKeywordsLoader } from '@sijil/core';
 
 import { fetchDocs, rxjsPageToKeyword } from './helpers';
 import { RxjsVersion } from './types';

@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import ApiDocumentationCategory from '../ng-doc.category';
 
-const AutoGenerationPage: NgDocPage = {
+const AutoGenerationPage: SjlPage = {
   title: 'Auto generation',
   mdFile: './index.md',
   category: ApiDocumentationCategory,

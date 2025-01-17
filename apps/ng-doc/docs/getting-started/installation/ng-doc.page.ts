@@ -1,4 +1,4 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import GettingStartedCategory from '../ng-doc.category';
 
@@ -7,7 +7,7 @@ import GettingStartedCategory from '../ng-doc.category';
  * your application to generate documentation. This means that you will need to create a new Angular
  * application, or use an existing one, and install NgDoc as a dependency.
  */
-const page: NgDocPage = {
+const page: SjlPage = {
   title: `Installation`,
   mdFile: ['./automatic.md', 'manual.md'],
   category: GettingStartedCategory,

@@ -1,5 +1,5 @@
-import { NgDocPageKeyword } from '@ng-doc/builder';
-import { NgDocPageAnchor } from '@ng-doc/core';
+import { NgDocPageKeyword } from '@sijil/builder';
+import { NgDocPageAnchor } from '@sijil/core';
 
 /**
  *

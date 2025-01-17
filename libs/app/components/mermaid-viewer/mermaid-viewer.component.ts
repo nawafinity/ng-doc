@@ -9,14 +9,14 @@ import {
   PLATFORM_ID,
   signal,
 } from '@angular/core';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
-import { NgDocThemeService } from '@ng-doc/app/services/theme';
-import { NG_DOC_MERMAID } from '@ng-doc/app/tokens';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
+import { NgDocThemeService } from '@sijil/app/services/theme';
+import { NG_DOC_MERMAID } from '@sijil/app/tokens';
 import {
   MagnifierControllerComponent,
   NgDocMagnifierComponent,
   NgDocSpinnerComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 import type { Mermaid } from 'mermaid';
 
 let id = 0;

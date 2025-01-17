@@ -1,11 +1,11 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import CustomizationCategory from '../ng-doc.category';
 
 /**
  * @status:warning UPDATED
  */
-const ThemesPage: NgDocPage = {
+const ThemesPage: SjlPage = {
   title: 'Themes',
   mdFile: './index.md',
   category: CustomizationCategory,

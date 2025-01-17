@@ -29,8 +29,8 @@
 This library is a part of NgDoc project, that uses to create documentation
 for Angular projects, please check our [repo](https://github.com/ng-doc/ng-doc) for more details.
 
-[npm-shield]: https://img.shields.io/npm/v/@ng-doc/builder.svg?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/@ng-doc/builder
+[npm-shield]: https://img.shields.io/npm/v/@sijil/builder.svg?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@sijil/builder
 [license-shield]: https://img.shields.io/github/license/ng-doc/ng-doc.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [build-shield]: https://img.shields.io/github/actions/workflow/status/ng-doc/ng-doc/release.yml?style=for-the-badge&branch=release

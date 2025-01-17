@@ -6,11 +6,11 @@ import {
 import { Location } from '@angular/common';
 import { NgZone } from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
-import { isPresent } from '@ng-doc/core';
-import { toElement } from '@ng-doc/ui-kit/helpers';
-import { NgDocOverlayConfig, NgDocOverlayContainer } from '@ng-doc/ui-kit/interfaces';
-import { fromSubscribe, ngDocZoneDetach, ngDocZoneOptimize } from '@ng-doc/ui-kit/observables';
-import { NgDocOverlayAnimationEvent } from '@ng-doc/ui-kit/types';
+import { isPresent } from '@sijil/core';
+import { toElement } from '@sijil/ui-kit/helpers';
+import { NgDocOverlayConfig, NgDocOverlayContainer } from '@sijil/ui-kit/interfaces';
+import { fromSubscribe, ngDocZoneDetach, ngDocZoneOptimize } from '@sijil/ui-kit/observables';
+import { NgDocOverlayAnimationEvent } from '@sijil/ui-kit/types';
 import { fromEvent, merge, NEVER, Observable } from 'rxjs';
 import { debounceTime, filter, map, pairwise, switchMap, take, takeUntil } from 'rxjs/operators';
 

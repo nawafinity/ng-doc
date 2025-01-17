@@ -9,16 +9,16 @@ import {
   Input,
   NgZone,
 } from '@angular/core';
-import { NgDocSearchComponent } from '@ng-doc/app/components/search';
-import { NgDocSidebarService } from '@ng-doc/app/services';
+import { WINDOW } from '@ng-web-apis/common';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocSearchComponent } from '@sijil/app/components/search';
+import { NgDocSidebarService } from '@sijil/app/services';
 import {
   NgDocButtonIconComponent,
   NgDocIconComponent,
   NgDocLetDirective,
   ngDocZoneOptimize,
-} from '@ng-doc/ui-kit';
-import { WINDOW } from '@ng-web-apis/common';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import { combineLatest, fromEvent } from 'rxjs';
 import { distinctUntilChanged, map, startWith } from 'rxjs/operators';

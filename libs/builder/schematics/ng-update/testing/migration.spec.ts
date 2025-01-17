@@ -45,10 +45,10 @@ Thumbs.db
       `{
  "compilerOptions": {
 "paths": {
-  "@ng-doc/add": ["libs/add/src/index.ts"],
-  "@ng-doc/app": ["libs/app/index.ts"],
-  "@ng-doc/generated": [".ng-doc/ng17/index.ts"],
-  "@ng-doc/generated/*": [".ng-doc/ng17/*"]
+  "@sijil/add": ["libs/add/src/index.ts"],
+  "@sijil/app": ["libs/app/index.ts"],
+  "@sijil/generated": [".ng-doc/ng17/index.ts"],
+  "@sijil/generated/*": [".ng-doc/ng17/*"]
  }
  }
 }
@@ -69,7 +69,7 @@ Thumbs.db
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@ng-doc/builder:browser",
+          "builder": "@sijil/builder:browser",
           "options": {
             "outputPath": "dist/ng17",
             "index": "src/index.html",
@@ -122,7 +122,7 @@ Thumbs.db
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@ng-doc/builder:dev-server",
+          "builder": "@sijil/builder:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "ng17:build:production"
@@ -176,7 +176,7 @@ Thumbs.db
     );
     host.create(
       'page/ng-doc.page.ts',
-      `import { NgDocPage } from '@ng-doc/core';
+      `import { NgDocPage } from '@sijil/core';
 
 const Page: NgDocPage = {
   title: \`Page\`,
@@ -198,7 +198,7 @@ keyword: 'MyPage'
 
     Content`);
     expect(tree.readContent('page/ng-doc.page.ts'))
-      .toEqual(`import { NgDocPage } from '@ng-doc/core';
+      .toEqual(`import { NgDocPage } from '@sijil/core';
 
 const Page: NgDocPage = {
   title: \`Page\`,

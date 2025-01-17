@@ -1,4 +1,4 @@
-import { isPresent } from '@ng-doc/core';
+import { isPresent } from '@sijil/core';
 import { ClassDeclaration, ObjectLiteralExpression } from 'ts-morph';
 
 import { getPlaygroundById } from './get-playground-by-id';

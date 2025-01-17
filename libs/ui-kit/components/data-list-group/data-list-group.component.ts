@@ -1,17 +1,17 @@
 import { NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { NgDocDataListComponent } from '@ng-doc/ui-kit/components/data-list';
-import { NgDocListComponent } from '@ng-doc/ui-kit/components/list';
-import { NgDocOptionComponent } from '@ng-doc/ui-kit/components/option';
+import { NgDocDataListComponent } from '@sijil/ui-kit/components/data-list';
+import { NgDocListComponent } from '@sijil/ui-kit/components/list';
+import { NgDocOptionComponent } from '@sijil/ui-kit/components/option';
 import {
   NgDocOptionGroupComponent,
   NgDocOptionGroupHeaderDirective,
-} from '@ng-doc/ui-kit/components/option-group';
-import { NgDocTextComponent } from '@ng-doc/ui-kit/components/text';
-import { NG_DOC_DEFAULT_STRINGIFY } from '@ng-doc/ui-kit/constants';
-import { ngDocMakePure } from '@ng-doc/ui-kit/decorators';
-import { NgDocContextWithImplicit } from '@ng-doc/ui-kit/interfaces';
-import { NgDocContent, NgDocGroupFn } from '@ng-doc/ui-kit/types';
+} from '@sijil/ui-kit/components/option-group';
+import { NgDocTextComponent } from '@sijil/ui-kit/components/text';
+import { NG_DOC_DEFAULT_STRINGIFY } from '@sijil/ui-kit/constants';
+import { ngDocMakePure } from '@sijil/ui-kit/decorators';
+import { NgDocContextWithImplicit } from '@sijil/ui-kit/interfaces';
+import { NgDocContent, NgDocGroupFn } from '@sijil/ui-kit/types';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 
 @Component({

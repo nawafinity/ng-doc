@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import parentCategory from '../ng-doc.category';
 
-const PerformancePage: NgDocPage = {
+const PerformancePage: SjlPage = {
   title: `Performance`,
   mdFile: './index.md',
   category: parentCategory,

@@ -1,13 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { extractValue } from '@ng-doc/core/helpers/extract-value';
-import { NgDocExtractedValue } from '@ng-doc/core/types/extracted-value';
+import { extractValue } from '@sijil/core/helpers/extract-value';
+import { NgDocExtractedValue } from '@sijil/core/types/extracted-value';
 
 @Pipe({
-	name: 'ngDocExtractValue',
-	standalone: true,
+  name: 'ngDocExtractValue',
+  standalone: true,
 })
 export class NgDocExtractValuePipe implements PipeTransform {
-	transform(value: string): NgDocExtractedValue {
-		return extractValue(value);
-	}
+  transform(value: string): NgDocExtractedValue {
+    return extractValue(value);
+  }
 }

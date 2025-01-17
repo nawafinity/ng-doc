@@ -1,4 +1,4 @@
-export const GENERATED_PATH: string = '@ng-doc/generated';
+export const GENERATED_PATH: string = '@sijil/generated';
 
 export interface EntityImport {
   name: string;
@@ -18,15 +18,15 @@ export interface AppImports {
 export const NG_DOC_COMPONENT_IMPORTS: ImportConstant[] = [
   {
     initializer: 'NgDocRootComponent',
-    imports: [{ name: 'NgDocRootComponent', path: '@ng-doc/app' }],
+    imports: [{ name: 'NgDocRootComponent', path: '@sijil/app' }],
   },
   {
     initializer: 'NgDocNavbarComponent',
-    imports: [{ name: 'NgDocNavbarComponent', path: '@ng-doc/app' }],
+    imports: [{ name: 'NgDocNavbarComponent', path: '@sijil/app' }],
   },
   {
     initializer: 'NgDocSidebarComponent',
-    imports: [{ name: 'NgDocSidebarComponent', path: '@ng-doc/app' }],
+    imports: [{ name: 'NgDocSidebarComponent', path: '@sijil/app' }],
   },
 ];
 
@@ -45,27 +45,27 @@ const NG_DOC_PROVIDERS: ImportConstant[] = [
   },
   {
     initializer: 'provideNgDocApp()',
-    imports: [{ name: 'provideNgDocApp', path: '@ng-doc/app' }],
+    imports: [{ name: 'provideNgDocApp', path: '@sijil/app' }],
   },
   {
     initializer: 'provideSearchEngine(NgDocDefaultSearchEngine)',
     imports: [
-      { name: 'provideSearchEngine', path: '@ng-doc/app' },
-      { name: 'NgDocDefaultSearchEngine', path: '@ng-doc/app' },
+      { name: 'provideSearchEngine', path: '@sijil/app' },
+      { name: 'NgDocDefaultSearchEngine', path: '@sijil/app' },
     ],
   },
   {
     initializer: 'providePageSkeleton(NG_DOC_DEFAULT_PAGE_SKELETON)',
     imports: [
-      { name: 'providePageSkeleton', path: '@ng-doc/app' },
-      { name: 'NG_DOC_DEFAULT_PAGE_SKELETON', path: '@ng-doc/app' },
+      { name: 'providePageSkeleton', path: '@sijil/app' },
+      { name: 'NG_DOC_DEFAULT_PAGE_SKELETON', path: '@sijil/app' },
     ],
   },
   {
     initializer: 'provideMainPageProcessor(NG_DOC_DEFAULT_PAGE_PROCESSORS)',
     imports: [
-      { name: 'provideMainPageProcessor', path: '@ng-doc/app' },
-      { name: 'NG_DOC_DEFAULT_PAGE_PROCESSORS', path: '@ng-doc/app' },
+      { name: 'provideMainPageProcessor', path: '@sijil/app' },
+      { name: 'NG_DOC_DEFAULT_PAGE_PROCESSORS', path: '@sijil/app' },
     ],
   },
 ];

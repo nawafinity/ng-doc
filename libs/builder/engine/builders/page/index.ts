@@ -1,4 +1,4 @@
-import { asArray, NgDocPage } from '@ng-doc/core';
+import { asArray, SjlPage } from '@sijil/core';
 import { merge, takeUntil } from 'rxjs';
 
 import { NgDocBuilderContext } from '../../../interfaces';
@@ -23,7 +23,7 @@ export function pageBuilder(
   context: NgDocBuilderContext,
   pagePath: string,
 ): Builder<AsyncFileOutput | FileOutput> {
-  return entryBuilder<NgDocPage>({
+  return entryBuilder<SjlPage>({
     tag: PAGE_ENTRY_BUILDER_TAG,
     context,
     entryPath: pagePath,

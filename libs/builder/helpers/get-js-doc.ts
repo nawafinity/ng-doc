@@ -1,6 +1,6 @@
 import { TSDocParser } from '@microsoft/tsdoc';
 import { type DocNode, DocExcerpt } from '@microsoft/tsdoc';
-import { asArray, isPresent } from '@ng-doc/core';
+import { asArray, isPresent } from '@sijil/core';
 import { JSDocableNode } from 'ts-morph';
 
 import { markdownToHtml } from './markdown-to-html';

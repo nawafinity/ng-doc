@@ -3,8 +3,8 @@ import {
   NgDocProvidedTypeControl,
   NgDocTypeControl,
   NgDocTypeControlProviderOptions,
-} from '@ng-doc/app/interfaces';
-import { Constructor } from '@ng-doc/core/types';
+} from '@sijil/app/interfaces';
+import { Constructor } from '@sijil/core/types';
 
 const tokenStore: Map<string, InjectionToken<NgDocProvidedTypeControl>> = new Map<
   string,

@@ -1,5 +1,5 @@
 {
-  "name": "@ng-doc/add",
+  "name": "@sijil/add",
   "version": "0.0.1",
   "type": "commonjs",
   "schematics": "./schematics/collection.json",

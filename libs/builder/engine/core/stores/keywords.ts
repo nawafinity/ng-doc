@@ -4,7 +4,7 @@ import {
   NgDocKeyword,
   NgDocKeywordsLoader,
   objectKeys,
-} from '@ng-doc/core';
+} from '@sijil/core';
 
 import { ObservableMap } from '../../../classes';
 import { formatKeywordKey } from '../../../helpers';

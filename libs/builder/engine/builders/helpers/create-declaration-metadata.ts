@@ -1,4 +1,4 @@
-import { asArray, NgDocApi, NgDocApiScope } from '@ng-doc/core';
+import { asArray, NgDocApi, NgDocApiScope } from '@sijil/core';
 import path from 'path';
 import { Subject } from 'rxjs';
 

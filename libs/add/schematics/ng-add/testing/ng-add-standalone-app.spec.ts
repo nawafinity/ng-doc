@@ -41,10 +41,10 @@ describe('ng-add standalone app', () => {
       `{
   "dependencies": {
     "@angular/core": "~13.0.0",
-    "@ng-doc/app": "${NG_DOC_VERSION}",
-    "@ng-doc/builder": "${NG_DOC_VERSION}",
-    "@ng-doc/core": "${NG_DOC_VERSION}",
-    "@ng-doc/ui-kit": "${NG_DOC_VERSION}"
+    "@sijil/app": "${NG_DOC_VERSION}",
+    "@sijil/builder": "${NG_DOC_VERSION}",
+    "@sijil/core": "${NG_DOC_VERSION}",
+    "@sijil/ui-kit": "${NG_DOC_VERSION}"
   }
 }`,
     );
@@ -87,10 +87,10 @@ describe('ng-add standalone app', () => {
     expect(tree.readContent('tsconfig.json')).toEqual(`{
   "compilerOptions": {
     "paths": {
-      "@ng-doc/generated": [
+      "@sijil/generated": [
         "./ng-doc/demo/index.ts"
       ],
-      "@ng-doc/generated/*": [
+      "@sijil/generated/*": [
         "./ng-doc/demo/*"
       ]
     }
@@ -119,8 +119,8 @@ describe('ng-add standalone app', () => {
     const tree: UnitTestTree = await runner.runSchematic('ng-add-setup-project', options, host);
 
     expect(tree.readContent('test/app/app.config.ts'))
-      .toEqual(`import { provideNgDocApp, provideSearchEngine, NgDocDefaultSearchEngine, providePageSkeleton, NG_DOC_DEFAULT_PAGE_SKELETON, provideMainPageProcessor, NG_DOC_DEFAULT_PAGE_PROCESSORS } from "@ng-doc/app";
-import { NG_DOC_ROUTING, provideNgDocContext } from "@ng-doc/generated";
+      .toEqual(`import { provideNgDocApp, provideSearchEngine, NgDocDefaultSearchEngine, providePageSkeleton, NG_DOC_DEFAULT_PAGE_SKELETON, provideMainPageProcessor, NG_DOC_DEFAULT_PAGE_PROCESSORS } from "@sijil/app";
+import { NG_DOC_ROUTING, provideNgDocContext } from "@sijil/generated";
 import { provideHttpClient, withInterceptorsFromDi, withFetch } from "@angular/common/http";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import { ApplicationConfig } from '@angular/core';
@@ -142,7 +142,7 @@ export const appConfig: ApplicationConfig = {
     const tree: UnitTestTree = await runner.runSchematic('ng-add-setup-project', options, host);
 
     expect(tree.readContent('test/app/app.component.ts'))
-      .toEqual(`import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent } from "@ng-doc/app";
+      .toEqual(`import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent } from "@sijil/app";
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
@@ -181,17 +181,17 @@ export class AppComponent {
               "main": "test/main.ts",
               "tsConfig": "test/tsconfig.app.json",
               "styles": [
-                "node_modules/@ng-doc/app/styles/global.css"
+                "node_modules/@sijil/app/styles/global.css"
               ],
               "assets": [
                 {
                   "glob": "**/*",
-                  "input": "node_modules/@ng-doc/app/assets",
+                  "input": "node_modules/@sijil/app/assets",
                   "output": "assets/ng-doc/app"
                 },
                 {
                   "glob": "**/*",
-                  "input": "node_modules/@ng-doc/ui-kit/assets",
+                  "input": "node_modules/@sijil/ui-kit/assets",
                   "output": "assets/ng-doc/ui-kit"
                 },
                 {
@@ -201,7 +201,7 @@ export class AppComponent {
                 }
               ],
               "allowedCommonJsDependencies": [
-                "@ng-doc/core"
+                "@sijil/core"
               ],
              },
              "configurations": {
@@ -212,7 +212,7 @@ export class AppComponent {
 \t\t\t\t\t"aot": true
               \t}
               },
-              "builder": "@ng-doc/builder:application"
+              "builder": "@sijil/builder:application"
           }
         }
     }

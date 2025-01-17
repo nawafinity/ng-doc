@@ -1,6 +1,6 @@
 import { Provider } from '@angular/core';
-import { NgDocSearchEngine } from '@ng-doc/app/classes/search-engine';
-import { Constructor } from '@ng-doc/core/types';
+import { NgDocSearchEngine } from '@sijil/app/classes/search-engine';
+import { Constructor } from '@sijil/core/types';
 
 /**
  * Provides the `NgDocSearchEngine` to enable search in the documentation.

@@ -10,19 +10,19 @@ import {
   NgZone,
   ViewChild,
 } from '@angular/core';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import {
   NgDocBaseInput,
   NgDocDisplayValueHost,
   NgDocInputHost,
   NgDocListHost,
   NgDocOverlayHost,
-} from '@ng-doc/ui-kit/classes';
-import { NgDocDropdownComponent } from '@ng-doc/ui-kit/components/dropdown';
-import { NgDocDropdownHandlerDirective } from '@ng-doc/ui-kit/directives/dropdown-handler';
-import { NgDocFocusCatcherDirective } from '@ng-doc/ui-kit/directives/focus-catcher';
-import { ngDocZoneOptimize } from '@ng-doc/ui-kit/observables';
-import { NgDocDisplayValueFunction, NgDocOverlayPosition } from '@ng-doc/ui-kit/types';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit/classes';
+import { NgDocDropdownComponent } from '@sijil/ui-kit/components/dropdown';
+import { NgDocDropdownHandlerDirective } from '@sijil/ui-kit/directives/dropdown-handler';
+import { NgDocFocusCatcherDirective } from '@sijil/ui-kit/directives/focus-catcher';
+import { ngDocZoneOptimize } from '@sijil/ui-kit/observables';
+import { NgDocDisplayValueFunction, NgDocOverlayPosition } from '@sijil/ui-kit/types';
 import {
   DI_DEFAULT_COMPARE,
   DICompareFunction,

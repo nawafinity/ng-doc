@@ -59,8 +59,8 @@ and create. Any contributions you make are **greatly appreciated**. Please read 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[npm-shield]: https://img.shields.io/npm/v/@ng-doc/builder.svg?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/@ng-doc/builder
+[npm-shield]: https://img.shields.io/npm/v/@sijil/builder.svg?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@sijil/builder
 [license-shield]: https://img.shields.io/github/license/ng-doc/ng-doc.svg?style=for-the-badge
 [license-url]: https://github.com/ng-doc/ng-doc/blob/main/LICENSE
 [build-shield]: https://img.shields.io/github/actions/workflow/status/ng-doc/ng-doc/release.yml?style=for-the-badge&branch=release

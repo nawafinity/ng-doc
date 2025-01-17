@@ -5,7 +5,7 @@ import {
   NgDocIconComponent,
   NgDocTextComponent,
   NgDocTextRightDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-fullscreen-button',

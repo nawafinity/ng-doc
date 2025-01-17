@@ -1,6 +1,6 @@
-import { NgDocCategory } from '@ng-doc/core';
+import { SjlCategory } from '@sijil/core';
 
-const ApiDocumentationCategory: NgDocCategory = {
+const ApiDocumentationCategory: SjlCategory = {
   title: 'API Documentation',
   route: 'api-documentation',
   expandable: true,

@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NgDocNavigation } from '@ng-doc/app/interfaces';
+import { NgDocNavigation } from '@sijil/app/interfaces';
 import {
   NgDocColor,
   NgDocDotComponent,
   NgDocTagComponent,
   NgDocTextComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-sidebar-item',

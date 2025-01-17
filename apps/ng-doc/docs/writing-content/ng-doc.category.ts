@@ -1,6 +1,6 @@
-import { NgDocCategory } from '@ng-doc/core';
+import { SjlCategory } from '@sijil/core';
 
-const WritingContentCategory: NgDocCategory = {
+const WritingContentCategory: SjlCategory = {
   title: 'Writing content',
   order: 2,
 };

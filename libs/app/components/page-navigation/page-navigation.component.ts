@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgDocNavigation, NgDocPageNavigation } from '@ng-doc/app/interfaces';
+import { NgDocNavigation, NgDocPageNavigation } from '@sijil/app/interfaces';
 import {
   NgDocIconComponent,
   NgDocTextComponent,
   NgDocTextLeftDirective,
   NgDocTextRightDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-page-navigation',

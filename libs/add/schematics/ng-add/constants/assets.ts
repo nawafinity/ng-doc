@@ -21,12 +21,12 @@ export function getNgDocAssets(
   return [
     {
       glob: '**/*',
-      input: 'node_modules/@ng-doc/app/assets',
+      input: 'node_modules/@sijil/app/assets',
       output: 'assets/ng-doc/app',
     },
     {
       glob: '**/*',
-      input: 'node_modules/@ng-doc/ui-kit/assets',
+      input: 'node_modules/@sijil/ui-kit/assets',
       output: 'assets/ng-doc/ui-kit',
     },
     {

@@ -1,11 +1,11 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import WritingContentCategory from '../ng-doc.category';
 
 /**
  * @status:info NEW
  */
-const MermaidDiagramsPage: NgDocPage = {
+const MermaidDiagramsPage: SjlPage = {
   title: `Mermaid diagrams`,
   mdFile: './index.md',
   category: WritingContentCategory,

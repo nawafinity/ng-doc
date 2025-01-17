@@ -1,13 +1,13 @@
 import { Component, Type } from '@angular/core';
 
-import { NgDocBaseEntity } from './base-entity';
-import { NgDocCategory } from './category';
+import { SjlBaseEntity } from './base-entity';
+import { SjlCategory } from './category';
 import { NgDocPlaygroundConfig } from './playground-config';
 
 /**
  * Page configuration interface, that should be used to describe configuration of the page
  */
-export interface NgDocPage extends NgDocBaseEntity {
+export interface SjlPage extends SjlBaseEntity {
   /**
    * Path to the page markdown file
    */
@@ -15,7 +15,7 @@ export interface NgDocPage extends NgDocBaseEntity {
   /**
    * The page category
    */
-  category?: NgDocCategory;
+  category?: SjlCategory;
   /**
    *  Render the page only for specific build configuration
    */

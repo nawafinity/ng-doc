@@ -1,2 +1,2 @@
-export * from '@ng-doc/app/defaults/default-processors';
-export * from '@ng-doc/app/defaults/default-skeleton';
+export * from '@sijil/app/defaults/default-processors';
+export * from '@sijil/app/defaults/default-skeleton';

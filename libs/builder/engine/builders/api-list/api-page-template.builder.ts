@@ -1,4 +1,4 @@
-import { kebabCase, NgDocApiScope } from '@ng-doc/core';
+import { kebabCase, NgDocApiScope } from '@sijil/core';
 import { finalize, merge, takeUntil } from 'rxjs';
 import { Node } from 'ts-morph';
 

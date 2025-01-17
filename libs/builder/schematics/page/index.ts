@@ -19,16 +19,16 @@ import { CATEGORY_NAME } from '../../engine/variables';
 import { posix } from '../../helpers/posix';
 import { findClosestFile, getTitle, varNameValidation } from '../utils';
 import { extractDefaultExportName } from '../utils/extract-default-export-name';
-import { NgDocBuildPageSchema } from './schema';
+import { SjlPageSchema } from './schema';
 
 const demoTemplates: string[] = ['ng-doc.module.ts.template'];
 
 /**
  * Generates a NgDocPage
- * @param {NgDocBuildPageSchema} options - The options to generate the page
+ * @param {SjlPageSchema} options - The options to generate the page
  * @returns {Rule} Angular Schematic Rule
  */
-export function generate(options: NgDocBuildPageSchema): Rule {
+export function generate(options: SjlPageSchema): Rule {
   return (host: Tree) => {
     const pageName: string = options.name ?? classify(options.title + 'Page');
 

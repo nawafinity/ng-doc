@@ -1,12 +1,12 @@
 import * as path from 'path';
 
 export const GLOBALS = {
-	workspaceRoot: '',
-	relative: (p: string) => path.relative(GLOBALS.workspaceRoot, p),
+  workspaceRoot: '',
+  relative: (p: string) => path.relative(GLOBALS.workspaceRoot, p),
 };
-export const PAGE_NAME: string = 'ng-doc.page.ts';
-export const CATEGORY_NAME: string = 'ng-doc.category.ts';
-export const API_NAME: string = 'ng-doc.api.ts';
+export const PAGE_NAME: string = 'sjl.page.ts';
+export const CATEGORY_NAME: string = 'sjl.category.ts';
+export const API_NAME: string = 'sjl.api.ts';
 
 export const PAGE_PATTERN: string = `**/${PAGE_NAME}`;
 export const CATEGORY_PATTERN: string = `**/${CATEGORY_NAME}`;

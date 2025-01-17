@@ -4,7 +4,7 @@ import {
   buildPlaygroundDemoTemplate,
   getAssignedInputs,
   NgDocPlaygroundProperties,
-} from '@ng-doc/core';
+} from '@sijil/core';
 import { ClassDeclaration, ObjectLiteralExpression } from 'ts-morph';
 
 import { NgDocPlaygroundMetadata } from '../../interfaces';

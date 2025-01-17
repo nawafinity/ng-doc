@@ -12,13 +12,14 @@ import {
   provideNgDocApp,
   providePageSkeleton,
   provideSearchEngine,
-} from '@ng-doc/app';
-import { provideNgDocContext } from '@ng-doc/generated';
+} from '@sijil/app';
+import { provideSjlI18n } from '@sijil/app/providers/i18n';
+import { provideSjlContext } from '@sijil/generated';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideClientHydration(),
-    provideNgDocContext(),
+    provideSjlContext(),
     provideNgDocApp(),
     provideSearchEngine(NgDocDefaultSearchEngine),
     providePageSkeleton(NG_DOC_DEFAULT_PAGE_SKELETON),
@@ -49,5 +50,6 @@ export const appConfig: ApplicationConfig = {
         anchorScrolling: 'enabled',
       }),
     ),
+    provideSjlI18n({}),
   ],
 };

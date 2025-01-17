@@ -1,5 +1,5 @@
-import { NgDocMermaidViewerComponent } from '@ng-doc/app/components/mermaid-viewer';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
+import { NgDocMermaidViewerComponent } from '@sijil/app/components/mermaid-viewer';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
 
 export const mermaidProcessor: NgDocPageProcessor<NgDocMermaidViewerComponent> = {
   component: NgDocMermaidViewerComponent,

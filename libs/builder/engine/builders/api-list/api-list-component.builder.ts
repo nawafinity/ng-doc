@@ -1,5 +1,5 @@
-import { renderTemplate } from '@ng-doc/builder';
-import { NgDocApi, uid } from '@ng-doc/core';
+import { renderTemplate } from '@sijil/builder';
+import { NgDocApi, uid } from '@sijil/core';
 import { of } from 'rxjs';
 
 import { Builder, FileOutput, runBuild } from '../../core';

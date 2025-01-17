@@ -1,8 +1,8 @@
 // @ts-nocheck
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {Routes} from '@angular/router';
-import {NgDocDemoAssets, NgDocPageComponent, NgDocRootPage} from '@ng-doc/app';
-import {isRoute, NgDocPage, NgDocPageType} from '@ng-doc/core';
+import {NgDocDemoAssets, NgDocPageComponent, NgDocRootPage} from '@sijil/app';
+import {isRoute, SjlPage, NgDocPageType} from '@sijil/core';
 {%- if entryPath %}
 import entry from '{{ metadata.outDir | createImportPath(entryPath) }}';
 {%- endif %}
@@ -48,7 +48,7 @@ export class PageComponent extends NgDocRootPage {
   readonly viewSourceFileUrl: string = '{{ viewSourceFileUrl }}';
     {%- endif -%}
     {%- if entryPath %}
-  readonly page?: NgDocPage = entry;
+  readonly page?: SjlPage = entry;
     {%- endif %}
     {%- if demoAssetsPath %}
   readonly demoAssets: NgDocDemoAssets = demoAssets;

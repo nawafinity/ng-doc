@@ -1,5 +1,5 @@
-import { renderTemplate } from '@ng-doc/builder';
-import { NgDocStyleType } from '@ng-doc/core';
+import { renderTemplate } from '@sijil/builder';
+import { NgDocStyleType } from '@sijil/core';
 import { ClassDeclaration } from 'ts-morph';
 
 import { NgDocAsset } from '../../interfaces';

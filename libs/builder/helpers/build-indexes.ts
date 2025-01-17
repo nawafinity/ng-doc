@@ -1,7 +1,7 @@
-import { NgDocPageType } from '@ng-doc/core';
-import { NgDocPageIndex } from '@ng-doc/core/interfaces';
 import { create } from '@orama/orama';
 import { defaultHtmlSchema, NodeContent, populate } from '@orama/plugin-parsedoc';
+import { NgDocPageType } from '@sijil/core';
+import { NgDocPageIndex } from '@sijil/core/interfaces';
 import { firstValueFrom, from } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
@@ -116,8 +116,8 @@ function transformFn(node: NodeContent): NodeContent {
  */
 async function removeNotIndexableContent(html: string): Promise<string> {
   return firstValueFrom(
-    from(importEsm<typeof import('@ng-doc/utils')>('@ng-doc/utils')).pipe(
-      switchMap((utils: typeof import('@ng-doc/utils')) => utils.removeNotIndexableContent(html)),
+    from(importEsm<typeof import('@sijil/utils')>('@sijil/utils')).pipe(
+      switchMap((utils: typeof import('@sijil/utils')) => utils.removeNotIndexableContent(html)),
     ),
   );
 }

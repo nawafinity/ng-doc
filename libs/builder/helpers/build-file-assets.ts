@@ -1,4 +1,4 @@
-import { NgDocCodeType } from '@ng-doc/core';
+import { NgDocCodeType } from '@sijil/core';
 import * as fs from 'fs';
 
 import { GLOBALS } from '../engine/variables';

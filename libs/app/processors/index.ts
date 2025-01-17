@@ -1,2 +1,2 @@
-export * from '@ng-doc/app/processors/page-processor';
-export * from '@ng-doc/app/processors/processors';
+export * from '@sijil/app/processors/page-processor';
+export * from '@sijil/app/processors/processors';

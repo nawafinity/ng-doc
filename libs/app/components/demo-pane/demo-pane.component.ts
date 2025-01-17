@@ -7,19 +7,19 @@ import {
   OnInit,
   Type,
 } from '@angular/core';
-import { NgDocRootPage } from '@ng-doc/app/classes/root-page';
-import { NgDocCodeComponent } from '@ng-doc/app/components/code';
-import { NgDocFullscreenButtonComponent } from '@ng-doc/app/components/fullscreen-button';
-import { NgDocDemoAsset } from '@ng-doc/app/interfaces';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { NgDocDemoPaneActionOptions } from '@ng-doc/core/interfaces';
+import { NgDocRootPage } from '@sijil/app/classes/root-page';
+import { NgDocCodeComponent } from '@sijil/app/components/code';
+import { NgDocFullscreenButtonComponent } from '@sijil/app/components/fullscreen-button';
+import { NgDocDemoAsset } from '@sijil/app/interfaces';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { NgDocDemoPaneActionOptions } from '@sijil/core/interfaces';
 import {
   NgDocPaneBackDirective,
   NgDocPaneComponent,
   NgDocPaneFrontDirective,
   NgDocTabComponent,
   NgDocTabGroupComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-demo-pane',

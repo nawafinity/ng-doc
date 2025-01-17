@@ -1,4 +1,4 @@
-import { asArray } from '@ng-doc/core';
+import { asArray } from '@sijil/core';
 import fs from 'fs';
 import path from 'path';
 import { OperatorFunction } from 'rxjs';

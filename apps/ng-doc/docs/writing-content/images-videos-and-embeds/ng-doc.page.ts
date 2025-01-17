@@ -1,11 +1,11 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import WritingContentCategory from '../ng-doc.category';
 
 /**
  * @status:info NEW
  */
-const ImagesVideosAndEmbeds: NgDocPage = {
+const ImagesVideosAndEmbeds: SjlPage = {
   title: `Images and embeds`,
   mdFile: './index.md',
   category: WritingContentCategory,

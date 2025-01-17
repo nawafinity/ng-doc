@@ -1,4 +1,4 @@
-import { isPresent } from '@ng-doc/core';
+import { isPresent } from '@sijil/core';
 import {
   AccessorDeclaration,
   CallSignatureDeclaration,

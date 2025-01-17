@@ -6,7 +6,7 @@ import {
   NgDocTextComponent,
   NgDocTextLeftDirective,
   NgDocTextRightDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 import { BackgroundComponent } from './background/background.component';
 

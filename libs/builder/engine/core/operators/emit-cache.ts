@@ -1,4 +1,4 @@
-import { PENDING_CACHE } from '@ng-doc/builder';
+import { PENDING_CACHE } from '@sijil/builder';
 import { OperatorFunction } from 'rxjs';
 import { tap } from 'rxjs/operators';
 

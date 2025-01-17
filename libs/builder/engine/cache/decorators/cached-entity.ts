@@ -1,4 +1,4 @@
-import { asArray, Constructor } from '@ng-doc/core';
+import { asArray, Constructor } from '@sijil/core';
 
 import { NgDocCachedClass } from '../cache';
 import { loadCache } from '../helpers';

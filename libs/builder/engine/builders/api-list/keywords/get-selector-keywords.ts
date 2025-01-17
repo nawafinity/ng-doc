@@ -1,4 +1,4 @@
-import { NgDocKeyword } from '@ng-doc/core';
+import { NgDocKeyword } from '@sijil/core';
 
 import { extractSelectors } from '../../../../helpers';
 import { DeclarationEntry, EntryMetadata } from '../../interfaces';

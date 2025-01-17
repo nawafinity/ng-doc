@@ -1,6 +1,6 @@
-import { asArray, NG_DOC_ELEMENT } from '@ng-doc/core';
-import { NgDocKeyword, NgDocKeywordLanguage } from '@ng-doc/core';
-import { KEYWORD_ALLOWED_LANGUAGES } from '@ng-doc/core';
+import { asArray, NG_DOC_ELEMENT } from '@sijil/core';
+import { NgDocKeyword, NgDocKeywordLanguage } from '@sijil/core';
+import { KEYWORD_ALLOWED_LANGUAGES } from '@sijil/core';
 import { Element, Text } from 'hast';
 import { isElement } from 'hast-util-is-element';
 import { toString } from 'hast-util-to-string';

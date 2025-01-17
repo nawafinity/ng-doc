@@ -1,5 +1,5 @@
-import { NgDocDemoComponent } from '@ng-doc/app/components/demo';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
+import { NgDocDemoComponent } from '@sijil/app/components/demo';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
 
 export const demoProcessor: NgDocPageProcessor<NgDocDemoComponent> = {
   component: NgDocDemoComponent,

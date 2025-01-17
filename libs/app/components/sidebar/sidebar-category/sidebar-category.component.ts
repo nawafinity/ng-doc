@@ -7,8 +7,9 @@ import {
   inject,
   Input,
 } from '@angular/core';
-import { NgDocRouteActiveDirective } from '@ng-doc/app/directives/route-active';
-import { NgDocNavigation } from '@ng-doc/app/interfaces';
+import { UntilDestroy } from '@ngneat/until-destroy';
+import { NgDocRouteActiveDirective } from '@sijil/app/directives/route-active';
+import { NgDocNavigation } from '@sijil/app/interfaces';
 import {
   NgDocContent,
   NgDocDotComponent,
@@ -17,8 +18,7 @@ import {
   NgDocRotatorDirective,
   NgDocTextComponent,
   NgDocTextLeftDirective,
-} from '@ng-doc/ui-kit';
-import { UntilDestroy } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 
 @Component({

@@ -1,10 +1,10 @@
 import { NgIf } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { NgDocInputHost } from '@ng-doc/ui-kit/classes/input-host';
-import { NgDocButtonIconComponent } from '@ng-doc/ui-kit/components/button-icon';
-import { NgDocIconComponent } from '@ng-doc/ui-kit/components/icon';
-import { NgDocFocusableDirective } from '@ng-doc/ui-kit/directives/focusable';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocInputHost } from '@sijil/ui-kit/classes/input-host';
+import { NgDocButtonIconComponent } from '@sijil/ui-kit/components/button-icon';
+import { NgDocIconComponent } from '@sijil/ui-kit/components/icon';
+import { NgDocFocusableDirective } from '@sijil/ui-kit/directives/focusable';
 import { DIControl, injectHostControl } from 'di-controls';
 
 @Component({

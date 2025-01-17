@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import ApiDocumentationCategory from '../ng-doc.category';
 
-const DocumentingDeclarationsPage: NgDocPage = {
+const DocumentingDeclarationsPage: SjlPage = {
   title: 'Documenting declarations',
   mdFile: './index.md',
   category: ApiDocumentationCategory,

@@ -1,10 +1,10 @@
 import { GlobalPositionStrategy } from '@angular/cdk/overlay';
 import { inject, Injectable, InjectionToken } from '@angular/core';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { NgDocOverlayRef } from '@ng-doc/ui-kit/classes';
-import { NgDocOverlayContainerComponent } from '@ng-doc/ui-kit/components/overlay-container';
-import { NgDocOverlayService } from '@ng-doc/ui-kit/services/overlay';
-import { NgDocContent } from '@ng-doc/ui-kit/types';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { NgDocOverlayRef } from '@sijil/ui-kit/classes';
+import { NgDocOverlayContainerComponent } from '@sijil/ui-kit/components/overlay-container';
+import { NgDocOverlayService } from '@sijil/ui-kit/services/overlay';
+import { NgDocContent } from '@sijil/ui-kit/types';
 
 import { NgDocDialogConfig } from './dialog.config';
 

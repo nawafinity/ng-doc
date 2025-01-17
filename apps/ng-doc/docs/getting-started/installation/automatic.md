@@ -10,11 +10,11 @@ and configure it.
 {% include "../../shared/generated-folder.md" %}
 
 ```bash group="install" name="Angular" icon="angular"
-ng add @ng-doc/add
+ng add @sijil/add
 ```
 
 ```bash group="install" name="Nx" icon="nx"
-npm install @ng-doc/add && npx nx g @ng-doc/add:ng-add
+npm install @sijil/add && npx nx g @sijil/add:ng-add
 ```
 
 By default, NgDoc uses your project's `sourceRoot` as the directory where you should create

@@ -1,13 +1,23 @@
 <ng-container
   [ngDocHotkey]="{ ctrlKey: false, altKey: false, shiftKey: false, code: 'Slash' }"
   (ngDocHotkey)="open()">
-  <button ng-doc-button-icon size="large" (click)="open()" ngDocDropdownOrigin>
+  <button
+    ng-doc-button-icon
+    size="large"
+    (click)="open()"
+    ngDocDropdownOrigin
+    class="!block xl:!hidden">
     <ng-doc-icon icon="search" [size]="24"></ng-doc-icon>
   </button>
 
-  <ng-doc-input-wrapper ngDocDropdownOrigin>
-    <ng-doc-icon icon="search" ngDocInputWrapperLeft></ng-doc-icon>
-    <input ngDocInputString readonly placeholder="Search..." (click)="open()" />
-    <ng-doc-tag class="search-hotkey" ngDocInputWrapperRight>/</ng-doc-tag>
+  <ng-doc-input-wrapper
+    ngDocDropdownOrigin
+    class="hidden lg:block mx-px relative flex-1 bg-white dark:bg-gray-900 pointer-events-auto rounded-xl min-w-0">
+    <div
+      class="w-full flex items-center text-sm leading-6 rounded-xl py-1.5 pl-3.5 pr-3 shadow-sm text-gray-400 dark:text-white/50 bg-background-light dark:bg-background-dark dark:brightness-[1.1] dark:ring-1 dark:hover:brightness-[1.25] ring-1 ring-gray-400/20 hover:ring-gray-600/25 dark:ring-gray-600/30 dark:hover:ring-gray-500/30 focus:outline-primary justify-between truncate gap-2 min-w-[43px]">
+      <ng-doc-icon icon="search" ngDocInputWrapperLeft></ng-doc-icon>
+      <input ngDocInputString readonly placeholder="Search..." (click)="open()" />
+      <ng-doc-tag class="search-hotkey" ngDocInputWrapperRight>/</ng-doc-tag>
+    </div>
   </ng-doc-input-wrapper>
 </ng-container>

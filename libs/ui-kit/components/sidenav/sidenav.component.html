@@ -1,12 +1,14 @@
-<div class="ng-doc-sidenav-wrapper">
-  <div class="ng-doc-sidenav">
-    <ng-container *polymorpheusOutlet="sidebar"></ng-container>
-  </div>
-  <div class="ng-doc-sidenav-content">
+<ng-container *polymorpheusOutlet="sidebar"></ng-container>
+
+<div class="ng-doc-sidenav-content">
+  <div class="flex flex-row gap-12 box-border w-full pt-40 lg:pt-10">
     @if (opened && hasBackdrop) {
       <div class="ng-doc-backdrop" @backdropFade (click)="closeEvent.emit()"></div>
     }
 
-    <ng-content></ng-content>
+    <div
+      class="relative grow box-border flex-col w-full mx-auto px-1 lg:ps-[23.7rem] lg:-ms-12 xl:w-[calc(100%-28rem)]">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>

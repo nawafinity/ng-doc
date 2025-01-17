@@ -6,7 +6,7 @@ You will then need a `<router-outlet />` in your page (for example in the demo).
 By default `disableFullscreenRoutes` is `false`.
 
 ```typescript name="ng-doc.page.ts" {10}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 import { MasterDetailComponent } from './master-detail.component';
 import { MasterComponent } from './master.component';
 import { DetailComponent } from './detail.component';

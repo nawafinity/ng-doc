@@ -1,10 +1,10 @@
 {
-	"$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-	"dest": "../../dist/libs/ui-kit",
-	"lib": {
-		"entryFile": "index.ts",
-		"styleIncludePaths": ["styles"]
-	},
-	"assets": ["assets"],
-	"allowedNonPeerDependencies": ["@ng-doc/core", "@angular/cdk"]
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/libs/ui-kit",
+  "lib": {
+    "entryFile": "index.ts",
+    "styleIncludePaths": ["styles"]
+  },
+  "assets": ["assets"],
+  "allowedNonPeerDependencies": ["@sijil/core", "@angular/cdk"]
 }

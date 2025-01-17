@@ -1,2 +1,2 @@
-export * from '@ng-doc/app/directives/code-highlighter';
-export * from '@ng-doc/app/directives/route-active';
+export * from '@sijil/app/directives/code-highlighter';
+export * from '@sijil/app/directives/route-active';

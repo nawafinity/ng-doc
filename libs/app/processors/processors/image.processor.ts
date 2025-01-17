@@ -1,6 +1,6 @@
 import { Injector, Renderer2 } from '@angular/core';
-import { NgDocImageViewerComponent } from '@ng-doc/app/components/image-viewer';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
+import { NgDocImageViewerComponent } from '@sijil/app/components/image-viewer';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
 
 export const imageProcessor: NgDocPageProcessor<NgDocImageViewerComponent> = {
   component: NgDocImageViewerComponent,

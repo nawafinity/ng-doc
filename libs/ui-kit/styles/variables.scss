@@ -1,123 +1,127 @@
 @import 'mixins';
 
-:root {
-  --ng-doc-base-gutter: 8px;
-  --ng-doc-transition: 0.2s;
-  --ng-doc-text-selection: rgba(21, 88, 214, 0.15);
+$prefix: 'sjl';
 
-  --ng-doc-white: #fff;
-  --ng-doc-black: #000;
-  --ng-doc-base-rgb: 0 0 0;
-  --ng-doc-base-0: var(--ng-doc-white);
-  --ng-doc-base-1: #f6f6f6;
-  --ng-doc-base-2: #ebebeb;
-  --ng-doc-base-3: #dedede;
-  --ng-doc-base-4: #d1d1d1;
-  --ng-doc-base-5: #b8b8b8;
-  --ng-doc-base-6: #ababab;
-  --ng-doc-base-7: #9e9e9e;
-  --ng-doc-base-8: #919191;
-  --ng-doc-base-9: #858585;
-  --ng-doc-base-10: #6e6e6e;
+:root {
+  --#{$prefix}-base-gutter: 8px;
+  --#{$prefix}-transition: 0.2s;
+  --#{$prefix}-text-selection: rgba(21, 88, 214, 0.15);
+
+  --#{$prefix}-white: #fff;
+  --#{$prefix}-black: #000;
+  --#{$prefix}-base-rgb: 0 0 0;
+  --#{$prefix}-base-0: var(--#{$prefix}-white);
+  --#{$prefix}-base-1: #f6f6f6;
+  --#{$prefix}-base-2: #ebebeb;
+  --#{$prefix}-base-3: #dedede;
+  --#{$prefix}-base-4: #d1d1d1;
+  --#{$prefix}-base-5: #b8b8b8;
+  --#{$prefix}-base-6: #ababab;
+  --#{$prefix}-base-7: #9e9e9e;
+  --#{$prefix}-base-8: #919191;
+  --#{$prefix}-base-9: #858585;
+  --#{$prefix}-base-10: #6e6e6e;
 
   // Main colors
-  --ng-doc-primary: #1558d6;
-  --ng-doc-primary-text: var(--ng-doc-white);
+  --#{$prefix}-primary: #1558d6;
+  --#{$prefix}-primary-text: var(--#{$prefix}-white);
 
-  --ng-doc-alert: #ff5959;
-  --ng-doc-alert-text: var(--ng-doc-white);
+  --#{$prefix}-alert: #ff5959;
+  --#{$prefix}-alert-text: var(--#{$prefix}-white);
 
-  --ng-doc-warning: #ff9f1a;
-  --ng-doc-warning-text: var(--ng-doc-white);
+  --#{$prefix}-warning: #ff9f1a;
+  --#{$prefix}-warning-text: var(--#{$prefix}-white);
 
-  --ng-doc-info: #3f68b5;
-  --ng-doc-info-text: var(--ng-doc-white);
+  --#{$prefix}-info: #3f68b5;
+  --#{$prefix}-info-text: var(--#{$prefix}-white);
 
-  --ng-doc-success: #00b74a;
-  --ng-doc-success-text: var(--ng-doc-white);
+  --#{$prefix}-success: #00b74a;
+  --#{$prefix}-success-text: var(--#{$prefix}-white);
 
-  --ng-doc-background: var(--ng-doc-base-0);
-  --ng-doc-hover-background: rgba(110, 110, 110, 0.09);
-  --ng-doc-border-size: 1px;
-  --ng-doc-border-color: var(--ng-doc-base-3);
-  --ng-doc-border-hover-color: var(--ng-doc-base-5);
-  --ng-doc-shadow-color: rgba(0, 0, 0, 0.15);
+  --#{$prefix}-background: var(--#{$prefix}-base-0);
+  --#{$prefix}-hover-background: rgba(110, 110, 110, 0.09);
+  --#{$prefix}-border-size: 1px;
+  --#{$prefix}-border-color: var(--#{$prefix}-base-3);
+  --#{$prefix}-border-hover-color: var(--#{$prefix}-base-5);
+  --#{$prefix}-shadow-color: rgba(0, 0, 0, 0.15);
 
   // Font
-  --ng-doc-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  --#{$prefix}-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
-  --ng-doc-font-system-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  --#{$prefix}-font-system-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
-  --ng-doc-heading-font-family: var(--ng-doc-font-system);
-  --ng-doc-heading-color: #111111;
-  --ng-doc-font-family: var(--ng-doc-font-system);
-  --ng-doc-font-size: calc(var(--ng-doc-base-gutter) * 2);
-  --ng-doc-line-height: calc(var(--ng-doc-base-gutter) * 3);
-  --ng-doc-font-weight: 400;
-  --ng-doc-code-font: var(--ng-doc-font-system-mono);
-  --ng-doc-code-font-size: 14px;
-  --ng-doc-code-line-height: 20px;
-  --ng-doc-code-font-weight: 400;
-  --ng-doc-text: rgb(78 78 78);
-  --ng-doc-text-muted: var(--ng-doc-base-8);
+  --#{$prefix}-heading-font-family: var(--#{$prefix}-font-system);
+  --#{$prefix}-heading-color: #111111;
+  --#{$prefix}-font-family: var(--#{$prefix}-font-system);
+  --#{$prefix}-font-size: calc(var(--#{$prefix}-base-gutter) * 2);
+  --#{$prefix}-line-height: calc(var(--#{$prefix}-base-gutter) * 3);
+  --#{$prefix}-font-weight: 400;
+  --#{$prefix}-code-font: var(--#{$prefix}-font-system-mono);
+  --#{$prefix}-code-font-size: 14px;
+  --#{$prefix}-code-line-height: 20px;
+  --#{$prefix}-code-font-weight: 400;
+  --#{$prefix}-text: rgb(78 78 78);
+  --#{$prefix}-text-muted: var(--#{$prefix}-base-8);
 
   // Mark
-  --ng-doc-mark-background: rgba(255, 222, 0, 0.3);
+  --#{$prefix}-mark-background: rgba(255, 222, 0, 0.3);
 
   // Link
-  --ng-doc-link-color: var(--ng-doc-primary);
+  --#{$prefix}-link-color: var(--#{$prefix}-primary);
 
   // Inline code
-  --ng-doc-inline-code-background: var(--ng-doc-base-9);
-  --ng-doc-inline-code-color: var(--ng-doc-text);
+  --#{$prefix}-inline-code-background: var(--#{$prefix}-base-9);
+  --#{$prefix}-inline-code-color: var(--#{$prefix}-text);
 
   // NgDocButtonIconComponent
-  --ng-doc-button-background: trasparent;
-  --ng-doc-button-background-opacity: 0;
-  --ng-doc-button-color: var(--ng-doc-text);
-  --ng-doc-button-hover-background: var(--ng-doc-base-2);
-  --ng-doc-button-hover-color: var(--ng-doc-button-color);
-  --ng-doc-button-active-background: var(--ng-doc-base-3);
-  --ng-doc-button-active-color: var(--ng-doc-button-hover-color);
+  --#{$prefix}-button-background: trasparent;
+  --#{$prefix}-button-background-opacity: 0;
+  --#{$prefix}-button-color: var(--#{$prefix}-text);
+  --#{$prefix}-button-hover-background: var(--#{$prefix}-base-2);
+  --#{$prefix}-button-hover-color: var(--#{$prefix}-button-color);
+  --#{$prefix}-button-active-background: var(--#{$prefix}-base-3);
+  --#{$prefix}-button-active-color: var(--#{$prefix}-button-hover-color);
 
   // NgDocFloatedBorderComponent
-  --ng-doc-floated-border-color: transparent;
-  --ng-doc-floated-border: 2px solid var(--ng-doc-floated-border-color);
-  --ng-doc-floated-border-shadow-color: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px transparent;
-  --ng-doc-floated-border-radius: var(--ng-doc-base-gutter);
+  --#{$prefix}-floated-border-color: transparent;
+  --#{$prefix}-floated-border: 2px solid var(--#{$prefix}-floated-border-color);
+  --#{$prefix}-floated-border-shadow-color: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px transparent;
+  --#{$prefix}-floated-border-radius: var(--#{$prefix}-base-gutter);
 
   /* NgDocCheckboxComponent */
-  --ng-doc-checkbox-color: var(--ng-doc-primary);
-  --ng-doc-checkbox-color-text: var(--ng-doc-primary-text);
-  --ng-doc-checkbox-border: var(--ng-doc-border-size) solid var(--ng-doc-border-color);
-  --ng-doc-checkbox-border-hover: var(--ng-doc-border-size) solid var(--ng-doc-border-hover-color);
+  --#{$prefix}-checkbox-color: var(--#{$prefix}-primary);
+  --#{$prefix}-checkbox-color-text: var(--#{$prefix}-primary-text);
+  --#{$prefix}-checkbox-border: var(--#{$prefix}-border-size) solid var(--#{$prefix}-border-color);
+  --#{$prefix}-checkbox-border-hover: var(--#{$prefix}-border-size) solid
+    var(--#{$prefix}-border-hover-color);
 
   /* NgDocInputWrapperComponent */
-  --ng-doc-input-text-align: left;
-  --ng-doc-input-width: 100%;
-  --ng-doc-input-height: 40px;
-  --ng-doc-input-border: var(--ng-doc-border-size) solid var(--ng-doc-border-color);
-  --ng-doc-input-border-hover: var(--ng-doc-border-size) solid var(--ng-doc-border-hover-color);
-  --ng-doc-input-background-color: var(--ng-doc-base-0);
-  --ng-doc-input-cursor: auto;
+  --#{$prefix}-input-text-align: left;
+  --#{$prefix}-input-width: 100%;
+  --#{$prefix}-input-height: 40px;
+  --#{$prefix}-input-border: var(--#{$prefix}-border-size) solid var(--#{$prefix}-border-color);
+  --#{$prefix}-input-border-hover: var(--#{$prefix}-border-size) solid
+    var(--#{$prefix}-border-hover-color);
+  --#{$prefix}-input-background-color: var(--#{$prefix}-base-0);
+  --#{$prefix}-input-cursor: auto;
 
   /* NgDocTagComponent */
-  --ng-doc-tag-background: var(--ng-doc-primary);
-  --ng-doc-tag-color: var(--ng-doc-primary-text);
+  --#{$prefix}-tag-background: var(--#{$prefix}-primary);
+  --#{$prefix}-tag-color: var(--#{$prefix}-primary-text);
 
   /* NgDocSelection */
-  --ng-doc-selection-border: 2px solid var(--ng-doc-primary);
-  --ng-doc-selection-background: transparent;
+  --#{$prefix}-selection-border: 2px solid var(--#{$prefix}-primary);
+  --#{$prefix}-selection-background: transparent;
 
   /* NgDocDot */
-  --ng-doc-dot-size: calc(var(--ng-doc-base-gutter) / 2);
-  --ng-doc-dot-background: var(--ng-doc-primary);
+  --#{$prefix}-dot-size: calc(var(--#{$prefix}-base-gutter) / 2);
+  --#{$prefix}-dot-background: var(--#{$prefix}-primary);
 
   /* Sidenav */
-  --ng-doc-sidenav-width: 300px;
+  --#{$prefix}-sidenav-width: 20rem;
 
   /* TabGroup */
-  --ng-doc-tab-group-border-radius: var(--ng-doc-base-gutter);
-  --ng-doc-tab-group-border: 1px solid var(--ng-doc-border-color);
+  --#{$prefix}-tab-group-border-radius: var(--#{$prefix}-base-gutter);
+  --#{$prefix}-tab-group-border: 1px solid var(--#{$prefix}-border-color);
 }

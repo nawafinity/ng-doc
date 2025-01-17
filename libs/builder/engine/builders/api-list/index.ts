@@ -5,8 +5,8 @@ import {
   entryBuilder,
   EntryMetadata,
   keywordsStore,
-} from '@ng-doc/builder';
-import { asArray, EMPTY_FUNCTION, NgDocApi, NgDocApiScope } from '@ng-doc/core';
+} from '@sijil/builder';
+import { asArray, EMPTY_FUNCTION, NgDocApi, NgDocApiScope } from '@sijil/core';
 import { finalize, merge } from 'rxjs';
 
 import { findDeclarations } from '../../../helpers';

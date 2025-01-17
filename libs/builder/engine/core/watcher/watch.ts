@@ -1,5 +1,5 @@
-import { GLOBALS } from '@ng-doc/builder';
 import * as watcher from '@parcel/watcher';
+import { GLOBALS } from '@sijil/builder';
 import { resolve } from 'path';
 import { Observable } from 'rxjs';
 import { filter, map, share } from 'rxjs/operators';

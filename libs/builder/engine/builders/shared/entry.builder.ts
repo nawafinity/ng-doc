@@ -1,4 +1,4 @@
-import { NgDocApi, NgDocPage } from '@ng-doc/core';
+import { NgDocApi, SjlPage } from '@sijil/core';
 import { finalize, of, takeUntil } from 'rxjs';
 
 import { ObservableSet } from '../../../classes';
@@ -28,10 +28,10 @@ interface Config {
  * This function returns a Builder Observable that emits a NgDocPage object whenever the file at the provided path changes.
  * The Builder Observable is created by merging an Observable that emits on file changes.
  * When the file changes, the build function is called, which compiles the TypeScript file, imports it as an ES module, and returns the default export.
- * @returns {Builder<NgDocPage>} - A Builder Observable that emits a NgDocPage object whenever the file at the provided path changes.
+ * @returns {Builder<SjlPage>} - A Builder Observable that emits a NgDocPage object whenever the file at the provided path changes.
  * @param config - The configuration object for the builder.
  */
-export function entryBuilder<T extends NgDocPage | NgDocApi>(
+export function entryBuilder<T extends SjlPage | NgDocApi>(
   config: Config,
 ): Builder<EntryMetadata<T>> {
   const { tag, context, entryPath } = config;

@@ -5,6 +5,7 @@ export * from './api-scope';
 export * from './base-entity';
 export * from './category';
 export * from './demo-options';
+export * from './i18n';
 export * from './js-doc-metadata';
 export * from './keyword-map';
 export * from './page';

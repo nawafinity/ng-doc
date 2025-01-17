@@ -18,13 +18,13 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { NgDocFocusControlComponent } from '@ng-doc/ui-kit/components/focus-control';
-import { NgDocOverlayPointerComponent } from '@ng-doc/ui-kit/components/overlay-pointer';
-import { NgDocEventSwitcherDirective } from '@ng-doc/ui-kit/directives/event-switcher';
-import { NgDocFocusCatcherDirective } from '@ng-doc/ui-kit/directives/focus-catcher';
-import { toElement } from '@ng-doc/ui-kit/helpers';
-import { NgDocOverlayConfig, NgDocOverlayContainer } from '@ng-doc/ui-kit/interfaces';
-import { ngDocZoneOptimize } from '@ng-doc/ui-kit/observables';
+import { NgDocFocusControlComponent } from '@sijil/ui-kit/components/focus-control';
+import { NgDocOverlayPointerComponent } from '@sijil/ui-kit/components/overlay-pointer';
+import { NgDocEventSwitcherDirective } from '@sijil/ui-kit/directives/event-switcher';
+import { NgDocFocusCatcherDirective } from '@sijil/ui-kit/directives/focus-catcher';
+import { toElement } from '@sijil/ui-kit/helpers';
+import { NgDocOverlayConfig, NgDocOverlayContainer } from '@sijil/ui-kit/interfaces';
+import { ngDocZoneOptimize } from '@sijil/ui-kit/observables';
 import {
   NgDocContent,
   NgDocHorizontalAlign,
@@ -32,8 +32,8 @@ import {
   NgDocOverlayPosition,
   NgDocOverlayRelativePosition,
   NgDocVerticalAlign,
-} from '@ng-doc/ui-kit/types';
-import { NgDocFocusUtils, NgDocOverlayUtils } from '@ng-doc/ui-kit/utils';
+} from '@sijil/ui-kit/types';
+import { NgDocFocusUtils, NgDocOverlayUtils } from '@sijil/ui-kit/utils';
 import { PolymorpheusModule, PolymorpheusOutletDirective } from '@tinkoff/ng-polymorpheus';
 import { Observable, Subject } from 'rxjs';
 import { distinctUntilChanged } from 'rxjs/operators';

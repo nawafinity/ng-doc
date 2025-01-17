@@ -1,18 +1,18 @@
-import { provideTypeControl } from '@ng-doc/app';
-import { NgDocPage } from '@ng-doc/core';
+import { provideTypeControl } from '@sijil/app';
+import { SjlPage } from '@sijil/core';
 import {
   NgDocButtonComponent,
   NgDocIconComponent,
   NgDocRotatorDirective,
   NgDocTagComponent,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 import WritingContentCategory from '../ng-doc.category';
 import { FloatingCircleComponent } from './floating-circle/floating-circle.component';
 import { FloatingCirclePositionControlComponent } from './floating-circle-position-control/floating-circle-position-control.component';
 import { FormatDatePipe } from './format-date.pipe';
 
-const PlaygroundPage: NgDocPage = {
+const PlaygroundPage: SjlPage = {
   title: `Playground`,
   mdFile: ['./index.md', './type-controls.md'],
   category: WritingContentCategory,

@@ -4,7 +4,7 @@ import {
   NgDocHorizontalAlign,
   NgDocOverlayRelativePosition,
   NgDocVerticalAlign,
-} from '@ng-doc/ui-kit/types';
+} from '@sijil/ui-kit/types';
 
 @Component({
   selector: 'ng-doc-overlay-pointer',

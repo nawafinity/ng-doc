@@ -8,9 +8,9 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
-import { NgDocSidebarService } from '@ng-doc/app/services';
-import { NgDocContent, NgDocLetDirective, NgDocSidenavComponent } from '@ng-doc/ui-kit';
 import { UntilDestroy } from '@ngneat/until-destroy';
+import { NgDocSidebarService } from '@sijil/app/services';
+import { NgDocContent, NgDocSidenavComponent } from '@sijil/ui-kit';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 
 /**
@@ -57,7 +57,7 @@ export class NgDocCustomSidebarDirective {}
   styleUrls: ['./root.component.scss'],
   providers: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgDocLetDirective, NgDocSidenavComponent, NgIf, PolymorpheusModule, AsyncPipe],
+  imports: [NgDocSidenavComponent, NgIf, PolymorpheusModule, AsyncPipe],
 })
 @UntilDestroy()
 export class NgDocRootComponent {

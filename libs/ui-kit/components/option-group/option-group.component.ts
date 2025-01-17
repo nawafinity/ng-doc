@@ -8,9 +8,9 @@ import {
   Directive,
   QueryList,
 } from '@angular/core';
-import { NgDocOptionComponent } from '@ng-doc/ui-kit/components/option';
-import { NgDocTextComponent } from '@ng-doc/ui-kit/components/text';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocOptionComponent } from '@sijil/ui-kit/components/option';
+import { NgDocTextComponent } from '@sijil/ui-kit/components/text';
 import { startWith } from 'rxjs/operators';
 
 @Directive({

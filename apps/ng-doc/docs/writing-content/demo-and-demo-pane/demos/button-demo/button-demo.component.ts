@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgDocButtonComponent, NgDocColor } from '@ng-doc/ui-kit';
-import { NgDocNotifyService } from '@ng-doc/ui-kit/services/notify';
+import { NgDocButtonComponent, NgDocColor } from '@sijil/ui-kit';
+import { NgDocNotifyService } from '@sijil/ui-kit/services/notify';
 
 @Component({
   selector: 'ng-doc-button-demo',

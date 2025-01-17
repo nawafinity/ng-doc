@@ -1,8 +1,8 @@
-import {NgDocPage} from '@ng-doc/core';<% if (importPath && categoryName) { %>
+import {SjlPage} from '@sijil/core';<% if (importPath && categoryName) { %>
 import <%= categoryName %> from '<%= importPath %>';<% } %><% if (module) { %>
 import {<%= pageName %>Module} from './ng-doc.module';<% } %>
 
-const <%= pageName %>: NgDocPage = {
+const <%= pageName %>: SjlPage = {
 	title: `<%= title %>`,
 	mdFile: './index.md',<% if (route) { %>
 	route: `<%= route %>`,<% } %><% if (importPath && categoryName) { %>

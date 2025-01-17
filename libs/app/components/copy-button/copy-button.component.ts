@@ -4,7 +4,7 @@ import {
   NgDocButtonIconComponent,
   NgDocSmoothResizeComponent,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-copy-button',

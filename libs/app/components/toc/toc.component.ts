@@ -1,4 +1,4 @@
-import { DOCUMENT, NgFor } from '@angular/common';
+import { DOCUMENT, NgClass } from '@angular/common';
 import {
   afterNextRender,
   ChangeDetectionStrategy,
@@ -17,10 +17,11 @@ import {
   WritableSignal,
 } from '@angular/core';
 import { Event as REvent, Router, Scroll } from '@angular/router';
-import { NgDocPageToc, NgDocTocItem } from '@ng-doc/app/interfaces';
-import { isPresent } from '@ng-doc/core/helpers/is-present';
-import { ngDocZoneOptimize } from '@ng-doc/ui-kit';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { SjlI18nDirective } from '@sijil/app/directives/i18n';
+import { NgDocPageToc, NgDocTocItem } from '@sijil/app/interfaces';
+import { isPresent } from '@sijil/core/helpers/is-present';
+import { NgDocIconComponent, ngDocZoneOptimize } from '@sijil/ui-kit';
 import { fromEvent, merge, Observable } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, map, startWith } from 'rxjs/operators';
 
@@ -31,7 +32,10 @@ import { NgDocTocElementComponent } from './toc-element/toc-element.component';
   templateUrl: './toc.component.html',
   styleUrls: ['./toc.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgFor, NgDocTocElementComponent],
+  imports: [NgDocTocElementComponent, NgDocIconComponent, NgClass, SjlI18nDirective],
+  host: {
+    id: 'table-of-contents',
+  },
 })
 @UntilDestroy()
 export class NgDocTocComponent implements NgDocPageToc, OnInit {

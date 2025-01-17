@@ -8,7 +8,7 @@ import {
   HostBinding,
   Input,
 } from '@angular/core';
-import { NgDocSize, NgDocTextAlign, NgDocTextColor } from '@ng-doc/ui-kit/types';
+import { NgDocSize, NgDocTextAlign, NgDocTextColor } from '@sijil/ui-kit/types';
 
 import { NgDocTextLeftDirective } from './text-left.directive';
 import { NgDocTextRightDirective } from './text-right.directive';

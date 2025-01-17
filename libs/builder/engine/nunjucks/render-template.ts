@@ -1,4 +1,4 @@
-import { objectKeys } from '@ng-doc/core';
+import { objectKeys } from '@sijil/core';
 import * as fs from 'fs';
 import { Environment, ILoader, LoaderSource } from 'nunjucks';
 import * as path from 'path';

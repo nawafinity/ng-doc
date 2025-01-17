@@ -1,4 +1,4 @@
-import { isPresent } from '@ng-doc/core';
+import { isPresent } from '@sijil/core';
 import { ClassDeclaration, ExpressionWithTypeArguments, Node } from 'ts-morph';
 
 import { findMember } from './find-member';

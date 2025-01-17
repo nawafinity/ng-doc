@@ -6,8 +6,8 @@ import {
   HostBinding,
   Input,
 } from '@angular/core';
-import { NgDocHorizontalAlign, NgDocPosition, NgDocVerticalAlign } from '@ng-doc/ui-kit/types';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocHorizontalAlign, NgDocPosition, NgDocVerticalAlign } from '@sijil/ui-kit/types';
 import { debounceTime } from 'rxjs/operators';
 
 import { NgDocSelectionHostDirective } from './selection-host.directive';

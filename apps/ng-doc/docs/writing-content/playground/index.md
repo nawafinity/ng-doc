@@ -26,8 +26,8 @@ itself, for example:
 > it.
 
 ```typescript name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocTagModule, NgDocTagComponent } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocTagModule, NgDocTagComponent } from '@sijil/ui-kit';
 
 import { PageModule } from './ng-doc.module';
 
@@ -88,8 +88,8 @@ with the selector of your component.
 > in your playground.
 
 ```typescript name="ng-doc.page.ts" {8}
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocButtonComponent } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocButtonComponent } from '@sijil/ui-kit';
 
 const MyAwesomePage: NgDocPage = {
   playgrounds: {
@@ -117,7 +117,7 @@ using Angular syntax.
 > `NgDocPlaygroundOptions.defaults` properties of the playground configuration.
 
 ```typescript name="ng-doc.page.ts" {8-10}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 const MyAwesomePage: NgDocPage = {
   playgrounds: {
@@ -147,8 +147,8 @@ the `content` field in your playground configuration, for example:
 > field, if this component is not standalone you must import its module.
 
 ```typescript name="ng-doc.page.ts" {11,15-18}
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocTagComponent, NgDocIconComponent } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocTagComponent, NgDocIconComponent } from '@sijil/ui-kit';
 
 const MyAwesomePage: NgDocPage = {
   imports: [NgDocIconComponent],
@@ -184,8 +184,8 @@ To make your playgrounds more lively and dynamic you can use `data` field,
 and put any data you want in it, to use it in your template, for example like that:
 
 ```typescript name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocTagComponent } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocTagComponent } from '@sijil/ui-kit';
 
 const MyAwesomePage: NgDocPage = {
   playgrounds: {
@@ -209,8 +209,8 @@ export default MyAwesomePage;
 You can also create playgrounds for directives in the same way as for components:
 
 ```typescript name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocRotatorDirective } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocRotatorDirective } from '@sijil/ui-kit';
 
 import { PageModule } from './ng-doc.module';
 
@@ -245,7 +245,7 @@ pipe class, and the `template` field to specify the template for the playground:
 > will bind them to the playground controls.
 
 ```typescript name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 import { FormatDatePipe } from './format-date.pipe';
 
 import { PageModule } from './ng-doc.module';
@@ -308,8 +308,8 @@ in the playground configuration, for example:
 > for this input.
 
 ```typescript name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocTagComponent } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocTagComponent } from '@sijil/ui-kit';
 
 const MyAwesomePage: NgDocPage = {
   imports: [NgDocTagModule],
@@ -334,8 +334,8 @@ field. If for any reason you don't have it, you can specify `NgDocTypeAlias`, an
 will prompt the playground to create a field with selectable values that you pass to `options`.
 
 ```typescript name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
-import { NgDocTagComponent } from '@ng-doc/ui-kit';
+import { NgDocPage } from '@sijil/core';
+import { NgDocTagComponent } from '@sijil/ui-kit';
 
 const MyAwesomePage: NgDocPage = {
   imports: [NgDocTagModule],

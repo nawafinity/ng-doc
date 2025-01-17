@@ -1,4 +1,4 @@
-import { escapeHtml } from '@ng-doc/core';
+import { escapeHtml } from '@sijil/core';
 import * as fs from 'fs';
 import { marked, RendererObject } from 'marked';
 import { EOL } from 'node:os';

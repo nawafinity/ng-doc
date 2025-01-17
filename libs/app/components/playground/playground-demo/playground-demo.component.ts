@@ -16,19 +16,19 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { NgDocDemoDisplayerComponent } from '@ng-doc/app/components/demo-displayer';
-import { formatHtml } from '@ng-doc/app/helpers';
-import { getPlaygroundDemoToken } from '@ng-doc/app/providers/playground-demo';
-import { NgDocFormPartialValue } from '@ng-doc/app/types';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocDemoDisplayerComponent } from '@sijil/app/components/demo-displayer';
+import { formatHtml } from '@sijil/app/helpers';
+import { getPlaygroundDemoToken } from '@sijil/app/providers/playground-demo';
+import { NgDocFormPartialValue } from '@sijil/app/types';
 import {
   buildPlaygroundDemoPipeTemplate,
   buildPlaygroundDemoTemplate,
-} from '@ng-doc/core/helpers/build-playground-demo-template';
-import { objectKeys } from '@ng-doc/core/helpers/object-keys';
-import { stringify } from '@ng-doc/core/helpers/stringify';
-import { NgDocPlaygroundConfig, NgDocPlaygroundProperties } from '@ng-doc/core/interfaces';
-import { NgDocLetDirective, NgDocSmoothResizeComponent } from '@ng-doc/ui-kit';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+} from '@sijil/core/helpers/build-playground-demo-template';
+import { objectKeys } from '@sijil/core/helpers/object-keys';
+import { stringify } from '@sijil/core/helpers/stringify';
+import { NgDocPlaygroundConfig, NgDocPlaygroundProperties } from '@sijil/core/interfaces';
+import { NgDocLetDirective, NgDocSmoothResizeComponent } from '@sijil/ui-kit';
 import { Subject } from 'rxjs';
 import { startWith, takeUntil } from 'rxjs/operators';
 

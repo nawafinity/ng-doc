@@ -1,6 +1,6 @@
 import { InjectionToken, Provider } from '@angular/core';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
-import { asArray } from '@ng-doc/core/helpers/as-array';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
+import { asArray } from '@sijil/core/helpers/as-array';
 
 export const NG_DOC_PAGE_PROCESSOR: InjectionToken<NgDocPageProcessor<unknown>> =
   new InjectionToken<NgDocPageProcessor<unknown>>('NG_DOC_PAGE_PROCESSOR');

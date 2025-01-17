@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { NgDocButtonIconComponent } from '@ng-doc/ui-kit/components/button-icon';
-import { NgDocIconComponent } from '@ng-doc/ui-kit/components/icon';
-import { NgDocMagnifierComponent } from '@ng-doc/ui-kit/components/magnifier';
+import { NgDocButtonIconComponent } from '@sijil/ui-kit/components/button-icon';
+import { NgDocIconComponent } from '@sijil/ui-kit/components/icon';
+import { NgDocMagnifierComponent } from '@sijil/ui-kit/components/magnifier';
 
 @Component({
   selector: 'ng-doc-magnifier-controller',

@@ -9,9 +9,9 @@ import {
   OnInit,
 } from '@angular/core';
 import { Params, RouterLink } from '@angular/router';
-import { NgDocDecodeUriComponentPipe } from '@ng-doc/app/pipes';
-import { NgDocIconComponent } from '@ng-doc/ui-kit';
 import { LOCATION } from '@ng-web-apis/common';
+import { NgDocDecodeUriComponentPipe } from '@sijil/app/pipes';
+import { NgDocIconComponent } from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-page-link',

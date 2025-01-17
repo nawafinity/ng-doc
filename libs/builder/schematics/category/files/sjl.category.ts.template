@@ -1,7 +1,7 @@
-import {NgDocCategory} from '@ng-doc/core';<% if (importPath && parentCategoryName) { %>
+import {SjlCategory} from '@sijil/core';<% if (importPath && parentCategoryName) { %>
 import <%= parentCategoryName %> from '<%= importPath %>';<% } %>
 
-const <%= categoryName %>: NgDocCategory = {
+const <%= categoryName %>: SjlCategory = {
 	title: '<%= title %>',<% if (route) { %>
 	route: `<%= route %>`,<% } %><% if (importPath && parentCategoryName) { %>
 	category: <%= parentCategoryName %>,<% } %><% if (expanded) { %>

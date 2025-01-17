@@ -11,8 +11,8 @@ import {
   TemplateRef,
   viewChild,
 } from '@angular/core';
-import { NgDocOverlayContainerComponent, NgDocOverlayService } from '@ng-doc/ui-kit';
-import { NgDocOverlayRef } from '@ng-doc/ui-kit/classes';
+import { NgDocOverlayContainerComponent, NgDocOverlayService } from '@sijil/ui-kit';
+import { NgDocOverlayRef } from '@sijil/ui-kit/classes';
 
 @Component({
   selector: 'ng-doc-image-viewer',

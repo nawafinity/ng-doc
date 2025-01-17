@@ -1,4 +1,4 @@
-import { NgDocSupportedDeclaration } from '@ng-doc/builder';
+import { NgDocSupportedDeclaration } from '@sijil/builder';
 import { Project } from 'ts-morph';
 
 import { isSupportedDeclaration } from './is-supported-declaration';

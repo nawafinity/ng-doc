@@ -1,4 +1,4 @@
-import { NgDocPlaygroundProperties } from '@ng-doc/core';
+import { NgDocPlaygroundProperties } from '@sijil/core';
 
 /**
  *
@@ -6,13 +6,13 @@ import { NgDocPlaygroundProperties } from '@ng-doc/core';
  * @param properties
  */
 export function getPlaygroundTemplateInputs(
-	properties: NgDocPlaygroundProperties,
+  properties: NgDocPlaygroundProperties,
 ): Record<string, string> {
-	return Object.keys(properties).reduce((inputs: Record<string, string>, property: string) => {
-		const inputName: string = properties[property].inputName;
+  return Object.keys(properties).reduce((inputs: Record<string, string>, property: string) => {
+    const inputName: string = properties[property].inputName;
 
-		inputs[inputName] = `properties['${property}']`;
+    inputs[inputName] = `properties['${property}']`;
 
-		return inputs;
-	}, {});
+    return inputs;
+  }, {});
 }

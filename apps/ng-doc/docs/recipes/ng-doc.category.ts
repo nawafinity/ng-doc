@@ -1,6 +1,6 @@
-import { NgDocCategory } from '@ng-doc/core';
+import { SjlCategory } from '@sijil/core';
 
-const RecipesCategory: NgDocCategory = {
+const RecipesCategory: SjlCategory = {
   title: 'Recipes',
   expandable: true,
   order: 7,

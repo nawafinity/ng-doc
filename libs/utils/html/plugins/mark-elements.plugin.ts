@@ -1,5 +1,5 @@
-import { NG_DOC_ELEMENT } from '@ng-doc/core';
-import { asArray } from '@ng-doc/core';
+import { NG_DOC_ELEMENT } from '@sijil/core';
+import { asArray } from '@sijil/core';
 import { Element, Root } from 'hast';
 import { visit } from 'unist-util-visit';
 

@@ -1,16 +1,16 @@
-import { NgDocApi } from '@ng-doc/core';
+import { NgDocApi } from '@sijil/core';
 
 const api: NgDocApi = {
   title: 'API References',
   keyword: 'ApiReferences',
   scopes: [
     {
-      name: '@ng-doc/app',
+      name: '@sijil/app',
       route: 'app',
       include: 'libs/app/**/*.ts',
     },
     {
-      name: '@ng-doc/builder',
+      name: '@sijil/builder',
       route: 'builder',
       include: [
         'libs/builder/interfaces/**.ts',
@@ -21,17 +21,17 @@ const api: NgDocApi = {
       exclude: ['libs/builder/**/**.spec.ts'],
     },
     {
-      name: '@ng-doc/ui-kit',
+      name: '@sijil/ui-kit',
       route: 'ui-kit',
       include: 'libs/ui-kit/**/*.ts',
     },
     {
-      name: '@ng-doc/core',
+      name: '@sijil/core',
       route: 'core',
       include: 'libs/core/**/*.ts',
     },
     {
-      name: '@ng-doc/keywords-loaders',
+      name: '@sijil/keywords-loaders',
       route: 'keywords-loaders',
       include: 'libs/keywords-loaders/index.ts',
     },

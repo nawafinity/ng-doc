@@ -1,5 +1,5 @@
-import { NgDocCodeType } from '@ng-doc/core';
 import { format, resolveConfig } from '@prettier/sync';
+import { NgDocCodeType } from '@sijil/core';
 import { Options } from 'prettier';
 
 /**

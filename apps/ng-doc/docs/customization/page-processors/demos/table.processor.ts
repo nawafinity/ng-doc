@@ -1,5 +1,5 @@
 import { Injector, Renderer2 } from '@angular/core';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
 
 import { CustomTableComponent } from './custom-table.component';
 

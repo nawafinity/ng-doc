@@ -1,6 +1,6 @@
 import { NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
-import { NgDocContent, NgDocHorizontalAlign } from '@ng-doc/ui-kit/types';
+import { NgDocContent, NgDocHorizontalAlign } from '@sijil/ui-kit/types';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 
 @Component({

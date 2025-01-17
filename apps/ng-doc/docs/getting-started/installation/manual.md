@@ -7,7 +7,7 @@ keyword: InstallationManualPage
 Install the NgDoc via npm
 
 ```bash
-npm i @ng-doc/{core,builder,ui-kit,app}
+npm i @sijil/{core,builder,ui-kit,app}
 ```
 
 ### Adding builders
@@ -22,10 +22,10 @@ alternatives from the NgDoc as shown in the example below
     "my-project": {
       "architect": {
         "build": {
-          "builder": "@ng-doc/builder:application"
+          "builder": "@sijil/builder:application"
         },
         "serve": {
-          "builder": "@ng-doc/builder:dev-server"
+          "builder": "@sijil/builder:dev-server"
         }
       }
     }
@@ -37,10 +37,10 @@ alternatives from the NgDoc as shown in the example below
 {
   "targets": {
     "build": {
-      "executor": "@ng-doc/builder:application"
+      "executor": "@sijil/builder:application"
     },
     "serve": {
-      "executor": "@ng-doc/builder:dev-server"
+      "executor": "@sijil/builder:dev-server"
     }
   }
 }
@@ -58,7 +58,7 @@ by adding them to your `styles` array.
       "architect": {
         "build": {
           "options": {
-            "styles": ["node_modules/@ng-doc/app/styles/global.css"]
+            "styles": ["node_modules/@sijil/app/styles/global.css"]
           }
         }
       }
@@ -72,7 +72,7 @@ by adding them to your `styles` array.
   "targets": {
     "build": {
       "options": {
-        "styles": ["node_modules/@ng-doc/app/styles/global.css"]
+        "styles": ["node_modules/@sijil/app/styles/global.css"]
       }
     }
   }
@@ -104,12 +104,12 @@ useful things. You also need to add them to your application's assets.
             "assets": [
               {
                 "glob": "**/*",
-                "input": "node_modules/@ng-doc/ui-kit/assets",
+                "input": "node_modules/@sijil/ui-kit/assets",
                 "output": "assets/ng-doc/ui-kit"
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/@ng-doc/app/assets",
+                "input": "node_modules/@sijil/app/assets",
                 "output": "assets/ng-doc/app"
               },
               {
@@ -134,12 +134,12 @@ useful things. You also need to add them to your application's assets.
         "assets": [
           {
             "glob": "**/*",
-            "input": "node_modules/@ng-doc/ui-kit/assets",
+            "input": "node_modules/@sijil/ui-kit/assets",
             "output": "assets/ng-doc/ui-kit"
           },
           {
             "glob": "**/*",
-            "input": "node_modules/@ng-doc/app/assets",
+            "input": "node_modules/@sijil/app/assets",
             "output": "assets/ng-doc/app"
           },
           {
@@ -168,8 +168,8 @@ the generated files and `allowSyntheticDefaultImports` option.
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@ng-doc/generated": ["ng-doc/<project-name>/index.ts"],
-      "@ng-doc/generated/*": ["ng-doc/<project-name>/*"]
+      "@sijil/generated": ["ng-doc/<project-name>/index.ts"],
+      "@sijil/generated/*": ["ng-doc/<project-name>/*"]
     }
   }
 }
@@ -193,8 +193,8 @@ import {
   provideMainPageProcessor,
   providePageSkeleton,
   provideSearchEngine,
-} from '@ng-doc/app';
-import { NG_DOC_ROUTING, provideNgDocContext } from '@ng-doc/generated';
+} from '@sijil/app';
+import { NG_DOC_ROUTING, provideNgDocContext } from '@sijil/generated';
 
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
@@ -245,8 +245,8 @@ import {
   provideMainPageProcessor,
   providePageSkeleton,
   provideSearchEngine,
-} from '@ng-doc/app';
-import { NG_DOC_ROUTING, provideNgDocContext } from '@ng-doc/generated';
+} from '@sijil/app';
+import { NG_DOC_ROUTING, provideNgDocContext } from '@sijil/generated';
 
 import { AppComponent } from './app.component';
 

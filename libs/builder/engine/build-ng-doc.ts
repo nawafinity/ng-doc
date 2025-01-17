@@ -9,7 +9,7 @@ import {
   printErrors,
   setColdStartFalse,
   whenStackIsEmpty,
-} from '@ng-doc/builder';
+} from '@sijil/builder';
 import fs from 'fs';
 import { forkJoin, merge, Observable, switchMap } from 'rxjs';
 import { debounceTime, map, tap } from 'rxjs/operators';

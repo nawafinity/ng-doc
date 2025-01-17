@@ -1,4 +1,4 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import { NgDocBuilderContext } from '../../../interfaces';
 import { renderTemplate } from '../../nunjucks';
@@ -6,7 +6,7 @@ import { EntryMetadata } from '../interfaces';
 
 interface Config {
   context: NgDocBuilderContext;
-  metadata: EntryMetadata<NgDocPage>;
+  metadata: EntryMetadata<SjlPage>;
 }
 
 /**

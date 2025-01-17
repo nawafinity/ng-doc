@@ -77,11 +77,18 @@
         </radialGradient>
       </defs></svg
   ></span>
-  <div class="ng-doc-root-wrapper">
+  <div class="relative antialiased text-sjl-gray-500 dark:text-sjl-gray-400">
     <header class="z-30 fixed lg:sticky top-0 w-full">
-      <ng-content select="ng-doc-navbar"></ng-content>
-      <ng-content select="[ngDocCustomNavbar]"></ng-content>
+      <div
+        id="navbar-transition"
+        class="absolute w-full h-full backdrop-blur flex-none transition-colors duration-500 border-b border-gray-500/5 dark:border-gray-300/[0.06] supports-backdrop-blur:bg-background-light/60 dark:bg-transparent"></div>
+      <div class="max-w-8xl mx-auto relative">
+        <ng-content select="ng-doc-navbar"></ng-content>
+        <ng-content select="[ngDocCustomNavbar]"></ng-content>
+      </div>
     </header>
+
+    <!-- Main -->
     <main class="max-w-8xl px-4 mx-auto lg:px-8 min-h-screen">
       <ng-doc-sidenav
         [sidebar]="sidebar ? sidebarContent : null"

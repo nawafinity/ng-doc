@@ -7,14 +7,14 @@ NgDoc 18 contains several migrations that can help migrate your documentation to
 perform the migration, execute the following command:
 
 > **Note**
-> After migration you also need to update other `@ng-doc/*` packages to v17.0.0
+> After migration you also need to update other `@sijil/*` packages to v17.0.0
 
 ```bash group="migration-v18" name="Angular" icon="angular"
-ng update @ng-doc/builder
+ng update @sijil/builder
 ```
 
 ```bash group="migration-v18" name="Nx" icon="nx"
-nx migrate @ng-doc/builder
+nx migrate @sijil/builder
 ```
 
 The migration should:
@@ -29,19 +29,19 @@ In v17.0.0, project was migrated to Angular v17, support of Webpack was removed,
 with Vite + Esbuild. To migrate automatically, you can run the following command:
 
 > **Note**
-> After migration you also need to update other `@ng-doc/*` packages to v17.0.0
+> After migration you also need to update other `@sijil/*` packages to v17.0.0
 
 ```bash group="migration-v17" name="Angular" icon="angular"
-ng update @ng-doc/builder
+ng update @sijil/builder
 ```
 
 ```bash group="migration-v17" name="Nx" icon="nx"
-nx migrate @ng-doc/builder
+nx migrate @sijil/builder
 ```
 
 ### Manual migration steps:
 
-- replace `@ng-doc/builder:browser` builder for the build target with `@ng-doc/builder:application`
+- replace `@sijil/builder:browser` builder for the build target with `@sijil/builder:application`
   builder
 - rename `main` property in `angular.json` to `browser`
 - covert `polyfills` property in `angular.json` to `polyfills` array
@@ -51,7 +51,7 @@ nx migrate @ng-doc/builder
 Vite doesn't see changes in folders that start with a dot, so you need to rename `.ng-doc` folder:
 
 - rename assets `.ng-doc/ng-doc/assets` folder to `ng-doc/ng-doc/assets` in `angular.json`
-- change `@ng-doc/generated` path `.ng-doc/ng-doc/index.ts` in `tsconfig.json` to
+- change `@sijil/generated` path `.ng-doc/ng-doc/index.ts` in `tsconfig.json` to
   `ng-doc/ng-doc/index.ts`
 - replace `.ng-doc` folder name in `.gitignore` file with `/ng-doc`
 
@@ -89,7 +89,7 @@ or `NgModule` anymore, all dependencies can be imported directly in the `ng-doc.
 To migrate from previous versions, you need to run the following command:
 
 ```bash
-ng g @ng-doc/builder:standalone-pages-migration
+ng g @sijil/builder:standalone-pages-migration
 ```
 
 This command will remove `ng-doc.dependencies.ts` file and update all `ng-doc.page.ts` files

@@ -1,4 +1,4 @@
-import { escapeHtml, NgDocPlaygroundOptions } from '@ng-doc/core';
+import { escapeHtml, NgDocPlaygroundOptions } from '@sijil/core';
 
 import { getPlaygroundMetadata } from '../../../index';
 import { NgDocPlaygroundMetadata } from '../../../interfaces';

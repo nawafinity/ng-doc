@@ -1,4 +1,4 @@
-import { isPresent } from '@ng-doc/core';
+import { isPresent } from '@sijil/core';
 import { sync } from 'fast-glob';
 import { minimatch } from 'minimatch';
 import path from 'path';

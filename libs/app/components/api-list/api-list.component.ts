@@ -20,10 +20,10 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { ActivatedRoute, ParamMap, Router, RouterLink } from '@angular/router';
-import { NgDocKindIconComponent } from '@ng-doc/app/components/kind-icon';
-import { NgDocFormPartialValue } from '@ng-doc/app/types';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { NgDocApiList, NgDocApiListItem } from '@ng-doc/core/interfaces';
+import { NgDocKindIconComponent } from '@sijil/app/components/kind-icon';
+import { NgDocFormPartialValue } from '@sijil/app/types';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { NgDocApiList, NgDocApiListItem } from '@sijil/core/interfaces';
 import {
   NgDocAutofocusDirective,
   NgDocButtonToggleComponent,
@@ -33,7 +33,7 @@ import {
   NgDocRadioGroupDirective,
   NgDocTextComponent,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 import { startWith } from 'rxjs/operators';
 
 interface ApiFilterForm {

@@ -10,15 +10,15 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { isPlaygroundProperty } from '@ng-doc/app/helpers';
+import { isPlaygroundProperty } from '@sijil/app/helpers';
 import {
   NgDocProvidedTypeControl,
   NgDocTypeControl,
   NgDocTypeControlProviderOptions,
-} from '@ng-doc/app/interfaces';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
-import { NgDocPlaygroundContent, NgDocPlaygroundProperty } from '@ng-doc/core/interfaces';
-import { NgDocLabelComponent, NgDocTooltipDirective } from '@ng-doc/ui-kit';
+} from '@sijil/app/interfaces';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
+import { NgDocPlaygroundContent, NgDocPlaygroundProperty } from '@sijil/core/interfaces';
+import { NgDocLabelComponent, NgDocTooltipDirective } from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-playground-property',

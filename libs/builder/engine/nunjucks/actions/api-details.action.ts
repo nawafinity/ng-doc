@@ -1,4 +1,4 @@
-import { kebabCase } from '@ng-doc/core';
+import { kebabCase } from '@sijil/core';
 
 import { getDeclarationByPath, minifyHtml } from '../../../helpers';
 import { renderTemplate } from '../../../index';

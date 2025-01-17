@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NgDocTypeControl } from '@ng-doc/app/interfaces';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
-import { NgDocCheckboxComponent, NgDocTooltipDirective } from '@ng-doc/ui-kit';
+import { NgDocTypeControl } from '@sijil/app/interfaces';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
+import { NgDocCheckboxComponent, NgDocTooltipDirective } from '@sijil/ui-kit';
 import { DIControl, provideHostControl } from 'di-controls';
 
 @Component({

@@ -1,4 +1,4 @@
-import { asArray, JSDocMetadata } from '@ng-doc/core';
+import { asArray, JSDocMetadata } from '@sijil/core';
 import { minimatch } from 'minimatch';
 import path from 'path';
 import { NEVER } from 'rxjs';

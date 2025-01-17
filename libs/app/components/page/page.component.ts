@@ -9,22 +9,23 @@ import {
   ViewChild,
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NgDocRootPage } from '@ng-doc/app/classes/root-page';
-import { NgDocBreadcrumbComponent } from '@ng-doc/app/components/breadcrumb';
-import { NgDocPageWrapperComponent } from '@ng-doc/app/components/page-wrapper';
-import { NgDocTocComponent } from '@ng-doc/app/components/toc';
-import { createComponent, generateToc } from '@ng-doc/app/helpers';
-import { NgDocPageSkeleton } from '@ng-doc/app/interfaces';
-import { NgDocSanitizeHtmlPipe } from '@ng-doc/app/pipes';
-import { NgDocPageProcessorComponent } from '@ng-doc/app/processors';
-import { provideTypeControl } from '@ng-doc/app/providers/type-control';
-import { NG_DOC_PAGE_SKELETON } from '@ng-doc/app/tokens';
+import { UntilDestroy } from '@ngneat/until-destroy';
+import { NgDocRootPage } from '@sijil/app/classes/root-page';
+import { NgDocBreadcrumbComponent } from '@sijil/app/components/breadcrumb';
+import { NgDocPageWrapperComponent } from '@sijil/app/components/page-wrapper';
+import { NgDocTocComponent } from '@sijil/app/components/toc';
+import { createComponent, generateToc } from '@sijil/app/helpers';
+import { NgDocPageSkeleton } from '@sijil/app/interfaces';
+import { NgDocSanitizeHtmlPipe } from '@sijil/app/pipes';
+import { NgDocPageProcessorComponent } from '@sijil/app/processors';
+import { provideTypeControl } from '@sijil/app/providers/type-control';
+import { NG_DOC_PAGE_SKELETON } from '@sijil/app/tokens';
 import {
   NgDocBooleanControlComponent,
   NgDocNumberControlComponent,
   NgDocStringControlComponent,
   NgDocTypeAliasControlComponent,
-} from '@ng-doc/app/type-controls';
+} from '@sijil/app/type-controls';
 import {
   DialogOutletComponent,
   NgDocButtonIconComponent,
@@ -33,8 +34,7 @@ import {
   NgDocTextLeftDirective,
   NgDocTextRightDirective,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
-import { UntilDestroy } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-page',

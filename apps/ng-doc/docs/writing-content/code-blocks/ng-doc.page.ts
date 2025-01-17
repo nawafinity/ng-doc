@@ -1,8 +1,8 @@
-import { NgDocPage } from '@ng-doc/core';
+import { SjlPage } from '@sijil/core';
 
 import WritingContentCategory from '../ng-doc.category';
 
-const CodeBlocksPage: NgDocPage = {
+const CodeBlocksPage: SjlPage = {
   title: `Code blocks`,
   mdFile: './index.md',
   category: WritingContentCategory,

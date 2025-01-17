@@ -1,7 +1,7 @@
 import { NgIf, NgTemplateOutlet } from '@angular/common';
 import { AfterViewInit, ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { expandCollapseAnimation, preventInitialChildAnimations } from '@ng-doc/ui-kit/animations';
-import { NgDocContent } from '@ng-doc/ui-kit/types';
+import { expandCollapseAnimation, preventInitialChildAnimations } from '@sijil/ui-kit/animations';
+import { NgDocContent } from '@sijil/ui-kit/types';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 
 /** Component helps to expand or collapse content */

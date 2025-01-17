@@ -1,6 +1,6 @@
 import { computed, Directive, ElementRef, inject, input, Signal } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { NgDocHighlighterService } from '@ng-doc/app/services';
+import { NgDocHighlighterService } from '@sijil/app/services';
 
 @Directive({
   selector: '[ngDocHighlighter]',

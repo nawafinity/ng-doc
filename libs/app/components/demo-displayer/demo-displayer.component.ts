@@ -1,8 +1,8 @@
 import { NgIf, NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
-import { NgDocCodeComponent } from '@ng-doc/app/components/code';
-import { NgDocCopyButtonComponent } from '@ng-doc/app/components/copy-button';
-import { NgDocCodeHighlighterDirective } from '@ng-doc/app/directives/code-highlighter';
+import { NgDocCodeComponent } from '@sijil/app/components/code';
+import { NgDocCopyButtonComponent } from '@sijil/app/components/copy-button';
+import { NgDocCodeHighlighterDirective } from '@sijil/app/directives/code-highlighter';
 import {
   NgDocButtonIconComponent,
   NgDocContent,
@@ -10,7 +10,7 @@ import {
   NgDocIconComponent,
   NgDocSmoothResizeComponent,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-demo-displayer',

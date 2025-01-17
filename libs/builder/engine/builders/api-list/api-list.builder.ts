@@ -1,5 +1,5 @@
-import { DeclarationEntry } from '@ng-doc/builder';
-import { asArray, NgDocApi, NgDocApiList, NgDocApiScope } from '@ng-doc/core';
+import { DeclarationEntry } from '@sijil/builder';
+import { asArray, NgDocApi, NgDocApiList, NgDocApiScope } from '@sijil/core';
 import path from 'path';
 import { of } from 'rxjs';
 

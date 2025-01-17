@@ -1,4 +1,4 @@
-import { kebabCase } from '@ng-doc/core';
+import { kebabCase } from '@sijil/core';
 import { Node } from 'ts-morph';
 
 import { getDeclarationByPath, minifyHtml } from '../../../helpers';

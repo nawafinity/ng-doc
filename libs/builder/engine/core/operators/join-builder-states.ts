@@ -1,4 +1,4 @@
-import { asArray } from '@ng-doc/core';
+import { asArray } from '@sijil/core';
 import { Observable, of } from 'rxjs';
 
 import {

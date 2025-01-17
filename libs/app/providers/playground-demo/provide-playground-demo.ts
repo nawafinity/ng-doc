@@ -1,5 +1,5 @@
 import { InjectionToken, Provider } from '@angular/core';
-import { Constructor } from '@ng-doc/core/types';
+import { Constructor } from '@sijil/core/types';
 
 const tokenStore: Map<string, InjectionToken<unknown>> = new Map<string, InjectionToken<unknown>>();
 

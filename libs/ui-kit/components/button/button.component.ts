@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
-import { NgDocColor, NgDocSize } from '@ng-doc/ui-kit/types';
+import { NgDocColor, NgDocSize } from '@sijil/ui-kit/types';
 
 /**
  * `NgDocButtonComponent` is a reusable button component with customizable properties.

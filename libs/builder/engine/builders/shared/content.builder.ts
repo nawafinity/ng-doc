@@ -5,8 +5,8 @@ import {
   createSecondaryTrigger,
   isBuilderDone,
   onKeywordsTouch,
-} from '@ng-doc/builder';
-import { NgDocKeyword, NgDocPageAnchor } from '@ng-doc/core';
+} from '@sijil/builder';
+import { NgDocKeyword, NgDocPageAnchor } from '@sijil/core';
 import { finalize, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 

@@ -1,7 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { EnvironmentProviders, inject, provideAppInitializer, Provider } from '@angular/core';
-import { NgDocHighlighterConfig, NgDocHighlighterService } from '@ng-doc/app/services/highlighter';
-import { NgDocUiConfig, provideNgDocUiKitConfig } from '@ng-doc/ui-kit';
+import { NgDocHighlighterConfig, NgDocHighlighterService } from '@sijil/app/services/highlighter';
+import { NgDocUiConfig, provideNgDocUiKitConfig } from '@sijil/ui-kit';
 
 /**
  * NgDoc application config.

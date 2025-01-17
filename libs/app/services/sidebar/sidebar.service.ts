@@ -2,10 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { inject, Injectable } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
-import { ngDocZoneOptimize } from '@ng-doc/ui-kit';
-import { NgDocScrollService } from '@ng-doc/ui-kit/services/scroll';
 import { WINDOW } from '@ng-web-apis/common';
 import { UntilDestroy } from '@ngneat/until-destroy';
+import { ngDocZoneOptimize } from '@sijil/ui-kit';
+import { NgDocScrollService } from '@sijil/ui-kit/services/scroll';
 import { BehaviorSubject, fromEvent, Observable, share } from 'rxjs';
 import { filter, startWith } from 'rxjs/operators';
 

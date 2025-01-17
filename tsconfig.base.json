@@ -18,19 +18,19 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ng-doc/add": ["libs/add/src/index.ts"],
-      "@ng-doc/app": ["libs/app/index.ts"],
-      "@ng-doc/app/*": ["libs/app/*"],
-      "@ng-doc/builder": ["libs/builder/index.ts"],
-      "@ng-doc/builder/testing/*": ["libs/builder/testing/*"],
-      "@ng-doc/core": ["libs/core/index.ts"],
-      "@ng-doc/core/*": ["libs/core/*"],
-      "@ng-doc/generated": ["ng-doc/ng-doc/index.ts"],
-      "@ng-doc/keywords-loaders": ["libs/keywords-loaders/index.ts"],
-      "@ng-doc/ui-kit": ["libs/ui-kit/index.ts"],
-      "@ng-doc/ui-kit/*": ["libs/ui-kit/*"],
-      "@ng-doc/utils": ["libs/utils/index.ts"],
-      "@ng-doc/utils/*": ["libs/utils/*"]
+      "@sijil/add": ["libs/add/src/index.ts"],
+      "@sijil/app": ["libs/app/index.ts"],
+      "@sijil/app/*": ["libs/app/*"],
+      "@sijil/builder": ["libs/builder/index.ts"],
+      "@sijil/builder/testing/*": ["libs/builder/testing/*"],
+      "@sijil/core": ["libs/core/index.ts"],
+      "@sijil/core/*": ["libs/core/*"],
+      "@sijil/generated": [".sijil/ng-doc/index.ts"],
+      "@sijil/keywords-loaders": ["libs/keywords-loaders/index.ts"],
+      "@sijil/ui-kit": ["libs/ui-kit/index.ts"],
+      "@sijil/ui-kit/*": ["libs/ui-kit/*"],
+      "@sijil/utils": ["libs/utils/index.ts"],
+      "@sijil/utils/*": ["libs/utils/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

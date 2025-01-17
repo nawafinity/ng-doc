@@ -1,4 +1,4 @@
-import { escapeRegexp } from '@ng-doc/core';
+import { escapeRegexp } from '@sijil/core';
 
 import { NgDocSnippet } from '../interfaces/snippet';
 

@@ -11,14 +11,14 @@ import {
   QueryList,
   ViewChildren,
 } from '@angular/core';
-import { tabFadeAnimation } from '@ng-doc/ui-kit/animations';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { tabFadeAnimation } from '@sijil/ui-kit/animations';
 import {
   NgDocSelectionComponent,
   NgDocSelectionHostDirective,
   NgDocSelectionOriginDirective,
-} from '@ng-doc/ui-kit/components/selection';
-import { NgDocSmoothResizeComponent } from '@ng-doc/ui-kit/components/smooth-resize';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit/components/selection';
+import { NgDocSmoothResizeComponent } from '@sijil/ui-kit/components/smooth-resize';
 import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import { startWith } from 'rxjs/operators';
 

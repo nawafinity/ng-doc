@@ -1,4 +1,4 @@
-import { asArray } from '@ng-doc/core';
+import { asArray } from '@sijil/core';
 import { sync } from 'fast-glob';
 import { ExportedDeclarations, Project, SourceFile } from 'ts-morph';
 

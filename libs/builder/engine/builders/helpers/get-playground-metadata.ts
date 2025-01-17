@@ -1,4 +1,4 @@
-import { NgDocPage, NgDocPlaygroundControlConfig, NgDocPlaygroundProperties } from '@ng-doc/core';
+import { NgDocPlaygroundControlConfig, NgDocPlaygroundProperties, SjlPage } from '@sijil/core';
 import { ObjectLiteralExpression } from 'ts-morph';
 
 import {
@@ -15,7 +15,7 @@ import { NgDocPlaygroundMetadata } from '../../../interfaces';
  * @param objectExpression
  */
 export function getPlaygroundMetadata(
-  page: NgDocPage,
+  page: SjlPage,
   objectExpression: ObjectLiteralExpression,
 ): Record<string, NgDocPlaygroundMetadata> {
   const expression = getPlaygroundsExpression(objectExpression);

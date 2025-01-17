@@ -1,9 +1,3 @@
-import { NgDocSearchEngine } from '@ng-doc/app/classes/search-engine';
-import { NgDocSearchResult } from '@ng-doc/app/interfaces';
-import { asArray } from '@ng-doc/core/helpers/as-array';
-import { objectKeys } from '@ng-doc/core/helpers/object-keys';
-import { NgDocPageIndex } from '@ng-doc/core/interfaces';
-import { NgDocHighlightPosition } from '@ng-doc/ui-kit';
 import { create, insertMultiple, Orama } from '@orama/orama';
 import {
   afterInsert,
@@ -11,6 +5,12 @@ import {
   searchWithHighlight,
 } from '@orama/plugin-match-highlight';
 import * as stemmer from '@orama/stemmers';
+import { NgDocSearchEngine } from '@sijil/app/classes/search-engine';
+import { NgDocSearchResult } from '@sijil/app/interfaces';
+import { asArray } from '@sijil/core/helpers/as-array';
+import { objectKeys } from '@sijil/core/helpers/object-keys';
+import { NgDocPageIndex } from '@sijil/core/interfaces';
+import { NgDocHighlightPosition } from '@sijil/ui-kit';
 import { from, Observable } from 'rxjs';
 import { map, shareReplay, switchMap } from 'rxjs/operators';
 

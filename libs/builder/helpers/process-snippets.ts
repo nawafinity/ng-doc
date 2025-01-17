@@ -1,4 +1,4 @@
-import { escapeRegexp } from '@ng-doc/core';
+import { escapeRegexp } from '@sijil/core';
 import * as fs from 'fs';
 import path from 'path';
 
@@ -36,7 +36,7 @@ export function processSnippets(code: string, basePath?: string): NgDocSnippet[]
     const isHTMLComment = match[2] === '<!--';
 
     if (match[3]?.includes('snippet-from-file=') && basePath) {
-      const config = parseSnippet(match[3].trim());
+      const config = parseSnippet(match[3].trim(), basePath);
 
       if (config) {
         const { title, lang, icon, opened, fromFile } = config;
@@ -56,7 +56,7 @@ export function processSnippets(code: string, basePath?: string): NgDocSnippet[]
         }
       }
     } else if (!endings.has(match.index)) {
-      const config = parseSnippet(match[3].trim());
+      const config = parseSnippet(match[3].trim(), basePath || '');
 
       if (config) {
         const { id, title, lang, icon, opened } = config;

@@ -1,8 +1,8 @@
 import { NgFor } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgDocPageBreadcrumbs } from '@ng-doc/app/interfaces';
-import { NgDocButtonIconComponent, NgDocIconComponent } from '@ng-doc/ui-kit';
+import { NgDocPageBreadcrumbs } from '@sijil/app/interfaces';
+import { NgDocButtonIconComponent, NgDocIconComponent } from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-breadcrumb',

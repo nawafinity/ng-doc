@@ -16,13 +16,13 @@ interface `NgDocBuildPageSchema`):
 {% include "../../shared/schematic-exec-path.md" %}
 
 ```bash
-ng g @ng-doc/builder:page "Installation"
+ng g @sijil/builder:page "Installation"
 ```
 
 {% include "../../shared/export-by-default.md" %}
 
 ```ts name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 const InstallationPage: NgDocPage = {
   title: 'Installation',
@@ -42,7 +42,7 @@ present.
 > You can use markdown in the description.
 
 ```ts name="ng-doc.page.ts" {3-5}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 /**
  * This page describes how to install the library.
@@ -67,7 +67,7 @@ multiple tabs on the page.
 > will be displayed by default.
 
 ```ts name="ng-doc.page.ts"
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 const InstallationPage: NgDocPage = {
   title: 'Installation',
@@ -105,13 +105,13 @@ the interface `NgDocBuildCategorySchema`):
 {% include "../../shared/schematic-exec-path.md" %}
 
 ```bash
-ng g @ng-doc/builder:category "Getting Started"
+ng g @sijil/builder:category "Getting Started"
 ```
 
 {% include "../../shared/export-by-default.md" %}
 
 ```ts name="ng-doc.category.ts"
-import { NgDocCategory } from '@ng-doc/core';
+import { NgDocCategory } from '@sijil/core';
 
 const GettingStartedCategory: NgDocCategory = {
   title: 'Getting Started',
@@ -126,7 +126,7 @@ To add a page to a category, you can use the `category` field in the page config
 the category and put it in the `category` field, like this:
 
 ```ts name="ng-doc.page.ts" {2,7}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 import GettingStartedCategory from '../ng-doc.category';
 
 const InstallationPage: NgDocPage = {
@@ -146,7 +146,7 @@ that starts with `:` and the status text. To see all available statuses, check t
 type.
 
 ```ts name="ng-doc.page.ts" {4}
-import { NgDocPage } from '@ng-doc/core';
+import { NgDocPage } from '@sijil/core';
 
 /**
  * @status:info NEW

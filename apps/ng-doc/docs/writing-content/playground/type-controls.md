@@ -42,7 +42,7 @@ you can do this by providing it in the `providers` array by using the `provideTy
 ```typescript name="main.ts"
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideTypeControl } from '@ng-doc/app';
+import { provideTypeControl } from '@sijil/app';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -69,7 +69,7 @@ In the example above, we registered a type control for the `FloatingCirclePositi
 ```typescript name="main.ts"
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideTypeControl } from '@ng-doc/app';
+import { provideTypeControl } from '@sijil/app';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -103,7 +103,7 @@ for a single type control at the same time, for example:
 ```typescript name="main.ts"
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideTypeControl } from '@ng-doc/app';
+import { provideTypeControl } from '@sijil/app';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -130,7 +130,7 @@ you can do it by changing the order property.
 ```typescript name="main.ts"
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideTypeControl } from '@ng-doc/app';
+import { provideTypeControl } from '@sijil/app';
 
 bootstrapApplication(AppComponent, {
   providers: [

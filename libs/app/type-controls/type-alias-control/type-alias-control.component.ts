@@ -1,9 +1,9 @@
 import { NgFor, NgIf, NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgDocKindIconComponent } from '@ng-doc/app/components/kind-icon';
-import { NgDocTypeControl } from '@ng-doc/app/interfaces';
-import { NgDocExtractValuePipe } from '@ng-doc/app/pipes/extract-value';
+import { NgDocKindIconComponent } from '@sijil/app/components/kind-icon';
+import { NgDocTypeControl } from '@sijil/app/interfaces';
+import { NgDocExtractValuePipe } from '@sijil/app/pipes/extract-value';
 import {
   NgDocButtonIconComponent,
   NgDocComboboxComponent,
@@ -16,7 +16,7 @@ import {
   NgDocTextLeftDirective,
   NgDocTextRightDirective,
   NgDocTooltipDirective,
-} from '@ng-doc/ui-kit';
+} from '@sijil/ui-kit';
 import { DIControl } from 'di-controls';
 
 @Component({

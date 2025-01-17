@@ -8,8 +8,8 @@ import {
   NgDocComponentAsset,
   renderTemplate,
   runBuild,
-} from '@ng-doc/builder';
-import { NgDocPage } from '@ng-doc/core';
+} from '@sijil/builder';
+import { SjlPage } from '@sijil/core';
 import * as path from 'path';
 import { of } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -23,7 +23,7 @@ import { EntryMetadata } from '../interfaces';
  */
 interface Config {
   context: NgDocBuilderContext;
-  page: EntryMetadata<NgDocPage>;
+  page: EntryMetadata<SjlPage>;
 }
 
 export const PAGE_DEMO_ASSETS_BUILDER_TAG = 'PageDemoAssets';

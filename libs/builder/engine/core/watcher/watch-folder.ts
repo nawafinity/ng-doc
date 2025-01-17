@@ -1,5 +1,5 @@
-import { asArray } from '@ng-doc/core';
 import watcher from '@parcel/watcher';
+import { asArray } from '@sijil/core';
 import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 

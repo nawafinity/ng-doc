@@ -1,4 +1,4 @@
-import { asArray } from '@ng-doc/core';
+import { asArray } from '@sijil/core';
 import { CallSignatureDeclaration, InterfaceDeclaration } from 'ts-morph';
 
 import { forAllInterfaces } from '../interface';

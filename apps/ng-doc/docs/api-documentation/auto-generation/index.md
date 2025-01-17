@@ -17,7 +17,7 @@ running the schematic command below (all available options you can find in the i
 {% include "../../shared/schematic-exec-path.md" %}
 
 ```bash
-ng g @ng-doc/builder:api
+ng g @sijil/builder:api
 ```
 
 {% include "../../shared/export-by-default.md" %}
@@ -27,7 +27,7 @@ ng g @ng-doc/builder:api
 > root path
 
 ```typescript name="ng-doc.api.ts"
-import { NgDocApi } from '@ng-doc/core';
+import { NgDocApi } from '@sijil/core';
 
 const api: NgDocApi = {
   title: 'API Reference',
@@ -56,7 +56,7 @@ the `include` field.
 You can also add a category to it to better structure your documentation articles.
 
 ```typescript name="ng-doc.api.ts" {2,6}
-import { NgDocApi } from '@ng-doc/core';
+import { NgDocApi } from '@sijil/core';
 import MyAwesomeCategory from '../ng-doc.category';
 
 const api: NgDocApi = {

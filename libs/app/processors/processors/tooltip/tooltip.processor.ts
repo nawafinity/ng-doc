@@ -7,8 +7,8 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
-import { NgDocPageProcessor } from '@ng-doc/app/interfaces';
-import { NgDocTooltipDirective } from '@ng-doc/ui-kit';
+import { NgDocPageProcessor } from '@sijil/app/interfaces';
+import { NgDocTooltipDirective } from '@sijil/ui-kit';
 
 @Component({
   selector: 'ng-doc-tooltip-wrapper',

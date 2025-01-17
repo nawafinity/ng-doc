@@ -1,4 +1,4 @@
-import { NgDocKeywordsLoader } from '@ng-doc/core';
+import { NgDocKeywordsLoader } from '@sijil/core';
 
 import { fetchDocs, ngPageToKeyword } from './helpers';
 import { NgKeywordLoaderOptions } from './interfaces';

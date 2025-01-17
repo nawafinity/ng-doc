@@ -1,4 +1,4 @@
-import { NgDocApi, NgDocApiScope, NgDocCategory, NgDocPage } from '@ng-doc/core';
+import { NgDocApi, NgDocApiScope, SjlCategory, SjlPage } from '@sijil/core';
 import { minimatch } from 'minimatch';
 
 import { NgDocSupportedDeclaration } from '../../../types';
@@ -13,20 +13,20 @@ export interface DeclarationEntry {
 export type DeclarationTabEntry = MarkdownEntry & DeclarationEntry;
 
 export type ContentEntry =
-  | NgDocPage
+  | SjlPage
   | NgDocApi
   | MarkdownEntry
   | DeclarationEntry
   | DeclarationTabEntry;
-export type FileEntry = NgDocPage | NgDocApi | NgDocCategory;
-export type Entry = ContentEntry | NgDocCategory;
+export type FileEntry = SjlPage | NgDocApi | SjlCategory;
+export type Entry = ContentEntry | SjlCategory;
 
 /**
  *
  * @param entry
  * @param filePath
  */
-export function isPageEntry(entry: Entry, filePath: string): entry is NgDocPage {
+export function isPageEntry(entry: Entry, filePath: string): entry is SjlPage {
   return minimatch(filePath, PAGE_PATTERN);
 }
 
@@ -35,7 +35,7 @@ export function isPageEntry(entry: Entry, filePath: string): entry is NgDocPage 
  * @param entry
  * @param filePath
  */
-export function isCategoryEntry(entry: Entry, filePath: string): entry is NgDocCategory {
+export function isCategoryEntry(entry: Entry, filePath: string): entry is SjlCategory {
   return minimatch(filePath, CATEGORY_PATTERN);
 }
 

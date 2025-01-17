@@ -1,4 +1,4 @@
-import { JSDocMetadata, NgDocApi, NgDocCategory, NgDocPage } from '@ng-doc/core';
+import { JSDocMetadata, NgDocApi, SjlCategory, SjlPage } from '@sijil/core';
 import { minimatch } from 'minimatch';
 import { Observable } from 'rxjs';
 import { ObjectLiteralExpression, SourceFile } from 'ts-morph';
@@ -29,22 +29,22 @@ export interface EntryMetadata<T extends Entry = Entry> {
   hidden?: boolean;
 }
 
-export type ParentEntryMetadata<T extends Entry> = T extends NgDocPage
-  ? EntryMetadata<NgDocCategory> | undefined
+export type ParentEntryMetadata<T extends Entry> = T extends SjlPage
+  ? EntryMetadata<SjlCategory> | undefined
   : T extends NgDocApi
-    ? EntryMetadata<NgDocCategory> | undefined
+    ? EntryMetadata<SjlCategory> | undefined
     : T extends DeclarationTabEntry
       ? EntryMetadata<DeclarationEntry>
       : T extends MarkdownEntry
-        ? EntryMetadata<NgDocPage>
+        ? EntryMetadata<SjlPage>
         : T extends DeclarationEntry
           ? undefined
-          : EntryMetadata<NgDocCategory> | undefined;
+          : EntryMetadata<SjlCategory> | undefined;
 
 /**
  *
  * @param entry
  */
-export function isPageEntryMetadata(entry: EntryMetadata): entry is EntryMetadata<NgDocPage> {
+export function isPageEntryMetadata(entry: EntryMetadata): entry is EntryMetadata<SjlPage> {
   return minimatch(entry.path, PAGE_PATTERN);
 }

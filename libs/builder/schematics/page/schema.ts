@@ -5,16 +5,16 @@ import { SchematicArgv } from '../schematic-argv';
  * the generator can be called by the command below 123
  *
  * ```bash
- * ng g @ng-doc/builder:page
+ * ng g @sijil/builder:page
  * ```
  *
  * Here is an example showing how you can call a generator with all parameters
  *
  * ```bash
- * ng g @ng-doc/builder:page MyPage -r custom-route -m -c -o 1
+ * ng g @sijil/builder:page MyPage -r custom-route -m -c -o 1
  * ```
  */
-export interface NgDocBuildPageSchema extends SchematicArgv {
+export interface SjlPageSchema extends SchematicArgv {
   /**
    * Title of the page (can be provided as string after command)
    */

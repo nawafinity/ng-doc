@@ -10,7 +10,7 @@ To do so, you need to import stemmer from `@orama/stemmers` package and provide 
 
 ```ts name="main.ts" {3,7}
 import { bootstrapApplication } from '@angular/platform-browser';
-import { NgDocDefaultSearchEngine, provideSearchEngine } from '@ng-doc/app';
+import { NgDocDefaultSearchEngine, provideSearchEngine } from '@sijil/app';
 import { stemmer } from '@orama/stemmers/dutch';
 import { AppComponent } from './app/app.component';
 
@@ -28,7 +28,7 @@ For example, increasing the number of results returned by the search engine:
 
 ```ts name="main.ts" {6}
 import { bootstrapApplication } from '@angular/platform-browser';
-import { NgDocDefaultSearchEngine, provideSearchEngine } from '@ng-doc/app';
+import { NgDocDefaultSearchEngine, provideSearchEngine } from '@sijil/app';
 import { AppComponent } from './app/app.component';
 
 bootstrapApplication(AppComponent, {
@@ -59,8 +59,8 @@ To do so, you need to implement the `NgDocSearchEngine` class and provide it via
 > using `assets/ng-doc/indexes.json` url.
 
 ```ts name="custom-search-engine.ts"
-import { NgDocSearchEngine, NgDocSearchResult } from '@ng-doc/app';
-import { NgDocPageIndex } from '@ng-doc/core';
+import { NgDocSearchEngine, NgDocSearchResult } from '@sijil/app';
+import { NgDocPageIndex } from '@sijil/core';
 import { from, Observable } from 'rxjs';
 import { map, shareReplay, switchMap } from 'rxjs/operators';
 
@@ -112,7 +112,7 @@ After you have created your search engine, you need to provide using `provideSea
 
 ```ts name="main.ts" {11}
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideSearchEngine } from '@ng-doc/app';
+import { provideSearchEngine } from '@sijil/app';
 import { AppComponent } from './app/app.component';
 
 bootstrapApplication(AppComponent, {

@@ -2,7 +2,7 @@
   <div class="ng-doc-sidebar-category-button" (click)="toggle()">
     <div class="ng-doc-sidebar-category" [ngDocRouteActive]="category.route" activeClass="active">
       <ng-doc-dot *ngIf="!expandable"></ng-doc-dot>
-      <span ng-doc-text>
+      <span ng-doc-text class="mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200">
         <ng-doc-icon
           icon="chevron-right"
           *ngIf="category.expandable"

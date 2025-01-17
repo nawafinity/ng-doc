@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgDocTypeControl } from '@ng-doc/app';
-import { EMPTY_FUNCTION } from '@ng-doc/core';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { NgDocTypeControl } from '@sijil/app';
+import { EMPTY_FUNCTION } from '@sijil/core';
 import {
   NgDocInputStringDirective,
   NgDocInputWrapperComponent,
   NgDocLabelComponent,
-} from '@ng-doc/ui-kit';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+} from '@sijil/ui-kit';
 
 import { FloatingCirclePosition } from '../floating-circle/floating-circle.component';
 

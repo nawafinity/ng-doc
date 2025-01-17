@@ -1,5 +1,5 @@
-import { StructuredDoc } from '@ng-doc/builder';
-import { isPresent } from '@ng-doc/core/helpers/is-present';
+import { StructuredDoc } from '@sijil/builder';
+import { isPresent } from '@sijil/core/helpers/is-present';
 
 /**
  *

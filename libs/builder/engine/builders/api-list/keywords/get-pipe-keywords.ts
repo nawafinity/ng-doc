@@ -1,4 +1,4 @@
-import { asArray, NgDocKeyword } from '@ng-doc/core';
+import { asArray, NgDocKeyword } from '@sijil/core';
 
 import { getPipeName } from '../../../../helpers';
 import { DeclarationEntry, EntryMetadata } from '../../interfaces';

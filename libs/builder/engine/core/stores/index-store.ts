@@ -1,4 +1,4 @@
-import { NgDocPageIndex } from '@ng-doc/core';
+import { NgDocPageIndex } from '@sijil/core';
 
 import { ObservableSet } from '../../../classes';
 

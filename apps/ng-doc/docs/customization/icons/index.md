@@ -14,7 +14,7 @@ when you configuration for the ui-kit.
 
 ```ts name="main.ts"
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideNgDocApp } from '@ng-doc/ui-kit';
+import { provideNgDocApp } from '@sijil/ui-kit';
 
 import { AppComponent } from './app/app.component';
 

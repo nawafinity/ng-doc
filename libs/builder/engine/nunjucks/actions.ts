@@ -2,7 +2,7 @@ import {
   NgDocDemoActionOptions,
   NgDocDemoPaneActionOptions,
   NgDocPlaygroundOptions,
-} from '@ng-doc/core';
+} from '@sijil/core';
 
 import { NgDocAction } from '../../types';
 import { demoAction } from './actions/demo.action';

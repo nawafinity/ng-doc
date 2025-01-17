@@ -1,6 +1,6 @@
 // @ts-nocheck
 import {ChangeDetectionStrategy, Component, Type, ViewChild, ViewContainerRef} from '@angular/core';
-import {NgDocBasePlayground, providePlaygroundDemo} from '@ng-doc/app';
+import {NgDocBasePlayground, providePlaygroundDemo} from '@sijil/app';
 // noinspection ES6UnusedImports
 import pageEntity from '{{ entryImportPath }}';
 import {CommonModule} from '@angular/common';

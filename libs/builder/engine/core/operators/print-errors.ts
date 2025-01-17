@@ -1,5 +1,5 @@
-import { BuilderState, isBuilderError } from '@ng-doc/builder';
-import { asArray } from '@ng-doc/core';
+import { BuilderState, isBuilderError } from '@sijil/builder';
+import { asArray } from '@sijil/core';
 import { OperatorFunction } from 'rxjs';
 import { tap } from 'rxjs/operators';
 

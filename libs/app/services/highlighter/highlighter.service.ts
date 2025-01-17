@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
-import { NG_DOC_SHIKI_THEME } from '@ng-doc/app/tokens';
 import { HighlighterGeneric } from '@shikijs/core/types';
+import { NG_DOC_SHIKI_THEME } from '@sijil/app/tokens';
 import { ThemeInput } from 'shiki';
 import { createHighlighterCore } from 'shiki/core';
 import getWasm from 'shiki/wasm';

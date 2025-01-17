@@ -1,8 +1,8 @@
-import { NgDocConfiguration } from '@ng-doc/builder';
-import { ngKeywordsLoader, rxjsKeywordsLoader } from '@ng-doc/keywords-loaders';
+import { SjlConfiguration } from '@sijil/builder';
+import { ngKeywordsLoader, rxjsKeywordsLoader } from '@sijil/keywords-loaders';
 
-const NgDocConfig: NgDocConfiguration = {
-  docsPath: 'apps/ng-doc/docs',
+const NgDocConfig: SjlConfiguration = {
+  docsPath: 'apps/ng-doc/documentation',
   routePrefix: 'docs',
   tsConfig: 'apps/ng-doc/tsconfig.app.json',
   cache: false,
@@ -48,6 +48,10 @@ const NgDocConfig: NgDocConfiguration = {
   },
   guide: {
     anchorHeadings: ['h1', 'h2', 'h3', 'h4'],
+  },
+  i18n: {
+    locales: ['ar', 'en'],
+    locale: 'ar',
   },
 };
 

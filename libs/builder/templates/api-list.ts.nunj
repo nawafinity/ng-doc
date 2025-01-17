@@ -1,7 +1,7 @@
 // @ts-nocheck
 import {ChangeDetectionStrategy, Component} from "@angular/core";
 import {Routes} from "@angular/router";
-import {NgDocApiListComponent} from '@ng-doc/app';
+import {NgDocApiListComponent} from '@sijil/app';
 
 @Component({
   selector: 'ng-doc-api-list-page-{{ id }}',

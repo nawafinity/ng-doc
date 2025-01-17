@@ -14,8 +14,8 @@ function to your bootstrap providers.
 ```typescript name="main.ts" {3,14}
 import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideMermaid } from '@ng-doc/app';
-import { NG_DOC_ROUTING, provideNgDocContext } from '@ng-doc/generated';
+import { provideMermaid } from '@sijil/app';
+import { NG_DOC_ROUTING, provideNgDocContext } from '@sijil/generated';
 
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';

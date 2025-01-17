@@ -1,12 +1,12 @@
 {
-	"name": "@ng-doc/keywords-loaders",
-	"version": "0.0.1",
-	"type": "commonjs",
-	"dependencies": {
-		"@ng-doc/core": "0.0.0",
-		"node-fetch": "2.6.11"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@sijil/keywords-loaders",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "dependencies": {
+    "@sijil/core": "0.0.0",
+    "node-fetch": "2.6.11"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

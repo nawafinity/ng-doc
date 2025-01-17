@@ -1,9 +1,9 @@
 import { BuilderContext } from '@angular-devkit/architect';
 import { json } from '@angular-devkit/core';
-import { NgDocStyleType } from '@ng-doc/core';
+import { NgDocStyleType } from '@sijil/core';
 import * as path from 'path';
 
-import { NgDocBuilderContext, NgDocConfiguration } from '../interfaces';
+import { NgDocBuilderContext, SjlConfiguration } from '../interfaces';
 import { loadConfig } from './load-config';
 import { createProject } from './typescript';
 
@@ -19,14 +19,14 @@ export function createBuilderContext(
   configFilePath?: string,
 ): NgDocBuilderContext {
   const projectRoot: string = path.dirname(targetOptions['browser'] as string);
-  const [configPath, config]: [string, NgDocConfiguration] = loadConfig(
+  const [configPath, config]: [string, SjlConfiguration] = loadConfig(
     configFilePath ?? projectRoot,
     !configFilePath,
   );
   const buildPath: string = path.join(
     context.workspaceRoot,
     config.outDir ?? '',
-    'ng-doc',
+    '.sijil',
     context.target?.project ?? 'app',
   );
   const tsConfig = config?.tsConfig ?? String(targetOptions['tsConfig']);

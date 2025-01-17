@@ -1,4 +1,4 @@
-import { isRoute } from '@ng-doc/core';
+import { isRoute } from '@sijil/core';
 import path from 'path';
 
 import { Entry, isApiEntry, isCategoryEntry, isPageEntry } from '../interfaces';
